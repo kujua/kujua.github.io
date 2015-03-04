@@ -2,25 +2,43 @@
 title: Kujua IT Blog
 layout: default
 ---
+<!-- {% assign tutorials = (site.pages | where: "layout" , "java-tutorials") %}
+{% for page in tutorials %}
+// do some work
+{% endfor %} -->
+
 <div class="posts">
   <div class="content full-bleed" id="recent-posts">
-    {% for post in site.posts limit:25 %}<a
+    {% assign sorted_posts = (site.posts | sort: 'sortorder') %}
+    {% for post in sorted_posts limit:25 %}<a
     href="{{ post.url }}" class="post-excerpt{% if post.photo_url %} photo{% endif %}">
     <div class="padded-content">
       <div class="title">{{ post.title }}</div>
       {% if post.photo_url %}
-      <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
+        <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
       {% else %}
-      <!-- <div class="title">{{ post.title }}</div> -->
-      <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
-        {{ post.date | date: "%b %Y" }}
-      </info>
-      {% if post.description %}
-      <span class="body">{{ post.description | strip_html }}</span>
-      {% else %}
-      <span class="body">{{ post.excerpt | strip_html }}</span>
-      {% endif %}
-      {% endif %}<!-- post.photo_url -->
+        {% unless post.ignoredate == 1 %}
+          <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+            {{ post.date | date: "%b %Y" }}
+          </info>
+          {% if post.updated %}
+            <info>
+              <div>  (updated: {{ post.updated }})</div>
+            </info>
+          {% endif %}
+        {% endunless %}
+        {% if post.photo-front-url %}
+          <div class="{{post.photo-front-class}}" style="background-image:url('{{ post.photo-front-url }}');"></div>
+        {% endif %}
+        {% if post.description %}
+          <span class="body">{{ post.description | strip_html }}</span>
+        {% else %}
+          <span class="body">{{ post.excerpt | strip_html }}</span>
+        {% endif %}
+        {% if post.photo-end-url %}
+          <div class="{{post.photo-end-class}}" style="background-image:url('{{ post.photo-end-url }}');"></div>
+        {% endif %}
+        {% endif %}<!-- post.photo_url -->
     </div>
   </a>{% endfor %}
   <div class="breaker"></div>

@@ -300,6 +300,10 @@ div.posts div.end {
   padding: 40px;
   text-align: center; }
 
+.grid-image-wrapper {
+  width: 250px;
+  height: 150px; }
+
 /* --------------------------------------------------------------------------------------------- */
 /* post excerpt */
 /* Wrapped in a div.content.full-bleed */
