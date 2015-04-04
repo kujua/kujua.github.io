@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Book - Web applications with Elm
+photo-front-url: /res/wrapper_elm_title.png
+photo-front-class: grid-image-wrapper-square
 sortorder: 2015-02-17
 ---
 

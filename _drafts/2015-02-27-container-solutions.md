@@ -55,5 +55,4 @@ At the end I am not sure what caused the problems. Was it the double installatio
 
 What concerns me most is that there was no way to get out of the mess, not even re-starting the machine. Vagrant seems to have some persistent cache that survives all events, good or bad.
 
-
-Trying on Linux
+Eventually I tried on a Ubuntu virtual machine. The installation went well without problems and I could run Docker containers with or without Vagrant. The next step is to mix them - have one Vagrant box for UI related applications and a few Docker containers for services, databases etc.
