@@ -302,11 +302,21 @@ div.posts div.end {
 
 .grid-image-wrapper {
   width: 250px;
-  height: 150px; }
+  height: 150px;
+  margin-top: 6px;
+  margin-bottom: 6px; }
 
 .grid-image-wrapper-square {
   width: 250px;
-  height: 250px; }
+  height: 250px;
+  margin-top: 6px;
+  margin-bottom: 6px; }
+
+.photocredit_small {
+  font-size: 7px;
+  color: gray;
+  padding-right: 10px;
+  float: right; }
 
 /* --------------------------------------------------------------------------------------------- */
 /* post excerpt */

@@ -1,14 +1,17 @@
 ---
 layout: post
 title: Container solutions - a trial
-photo-front-url: /res/elm.jpeg
+photo-front-url: /res/container_1504.jpg
 photo-front-class: grid-image-wrapper
+photo-credit: 1
+photo-front-credit-link: flickr.com/photos/glynlowe
+photo-front-credit: Glyn Lowe Photoworks
 sortorder: 2015-04-24
 date: 2015-04-24
 ignoredate: 0
 ---
 
-**The idea of containers is very compelling. Getting rid of heavy virtual machines and just serving lightweight application files.**
+**The idea of containers is very compelling. We get rid of heavy virtual machines and just serve lightweight application files.**
 
 For a training environment I wanted to have containers for database, web server and IDE. As far as I know it is not possible, or at least not easily possible, to run interactive user interfaces in Docker. So my idea was to have Vagrant as host for an IDE container and two Docker-containers for the services.
 

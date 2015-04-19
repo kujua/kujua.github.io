@@ -29,6 +29,10 @@ layout: default
         {% endunless %}
         {% if post.photo-front-url %}
           <div class="{{post.photo-front-class}}" style="background-image:url('{{ post.photo-front-url }}');"></div>
+          {% if post.photo-credit %}
+            <span class="photocredit_small">Photo Credit: {{post.photo-front-credit}} ({{post.photo-front-credit-link}})</span>
+            </br>
+          {% endif %}
         {% endif %}
         {% if post.description %}
           <span class="body">{{ post.description | strip_html }}</span>
