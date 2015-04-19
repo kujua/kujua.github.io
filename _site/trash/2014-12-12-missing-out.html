@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" media="screen, projection" href="/css/screen.css" type="text/css">
+  <link href="/css/syntax.css" rel="stylesheet">
+  <title>Wolfgang Loder - Technical Blog</title>
+</head>
+  <body>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/">Wolfgang Loder</a></h1>
+      <ul class="navigation">
+        <!-- <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li> -->
+        <li><a href="/about/">About me</a></li>
+      </ul>
+    </header>
+    <div class="content">
+  <div class="post single">
+    
+      <h1>Missing out</h1>
+      
+        <info datetime="">
+          
+        </info>
+        
+      
+    
+    <div class="body"><p><strong>The first paragraph will be displayed as excerpt in the overview page. It can be long or short and no html tags will be processed.</strong></p>
+
+<p>The next paragraph is the actual text.</p>
+
+<!-- https://gist.github.com/StephanHoyer/91d8175507fcae8fb31a
+<script src="https://gist.github.com/StephanHoyer/91d8175507fcae8fb31a.js"> </script> -->
+
+<h5 id="ruby">Ruby</h5>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">show</span>
+<span class="lineno">2</span>   <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+<span class="lineno">3</span>   <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+<span class="lineno">4</span>     <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
+<span class="lineno">5</span>     <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
+<span class="lineno">6</span>   <span class="k">end</span>
+<span class="lineno">7</span> <span class="k">end</span></code></pre></div>
+
+<p>C#</p>
+
+<div class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="lineno">1</span> <span class="k">public</span> <span class="k">class</span> <span class="nc">Klass</span>
+<span class="lineno">2</span> <span class="p">{</span>
+<span class="lineno">3</span>   <span class="k">public</span> <span class="kt">string</span> <span class="n">id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span><span class="k">set</span><span class="p">;}</span>
+<span class="lineno">4</span>   <span class="k">public</span> <span class="nf">Klass</span><span class="p">()</span>
+<span class="lineno">5</span>   <span class="p">{</span>
+<span class="lineno">6</span>     <span class="n">id</span> <span class="p">=</span> <span class="s">&quot;123&quot;</span><span class="p">;</span> <span class="c1">// just for testing</span>
+<span class="lineno">7</span>   <span class="p">}</span>
+<span class="lineno">8</span> <span class="p">}</span></code></pre></div>
+
+<p>Javascript</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno">1</span> <span class="kd">var</span> <span class="nx">Klass</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="lineno">2</span>   <span class="kd">var</span> <span class="nx">id</span><span class="p">;</span>
+<span class="lineno">3</span>   <span class="k">new</span><span class="p">()</span> <span class="p">{</span>
+<span class="lineno">4</span>     <span class="nx">id</span> <span class="o">=</span> <span class="s2">&quot;123&quot;</span><span class="p">;</span> <span class="c1">// just for testing</span>
+<span class="lineno">5</span>   <span class="p">}</span>
+<span class="lineno">6</span> <span class="p">}</span></code></pre></div>
+
+<p>Erlang</p>
+
+<div class="highlight"><pre><code class="language-erlang" data-lang="erlang"><span class="lineno">1</span> <span class="nf">duplicate</span><span class="p">(</span><span class="mi">0</span><span class="p">,_)</span> <span class="o">-&gt;</span>
+<span class="lineno">2</span>   <span class="p">[];</span>
+<span class="lineno">3</span> <span class="nf">duplicate</span><span class="p">(</span><span class="nv">N</span><span class="p">,</span><span class="nv">Term</span><span class="p">)</span> <span class="k">when</span> <span class="nv">N</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">-&gt;</span>
+<span class="lineno">4</span>   <span class="p">[</span><span class="nv">Term</span><span class="p">|</span><span class="n">duplicate</span><span class="p">(</span><span class="nv">N</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="nv">Term</span><span class="p">)].</span></code></pre></div>
+
+<p>Elixir</p>
+
+<div class="highlight"><pre><code class="language-elixir" data-lang="elixir"><span class="lineno"> 1</span> <span class="n">parent</span> <span class="p">=</span> <span class="n">self</span><span class="p">()</span>
+<span class="lineno"> 2</span> 
+<span class="lineno"> 3</span> <span class="c1"># Spawns an Elixir process (not an operating system one!)</span>
+<span class="lineno"> 4</span> <span class="n">spawn_link</span><span class="p">(</span><span class="k">fn</span> <span class="p">-&gt;</span>
+<span class="lineno"> 5</span>   <span class="n">send</span> <span class="n">parent</span><span class="p">,</span> <span class="p">{</span><span class="ss">:msg</span><span class="p">,</span> <span class="s2">&quot;hello world&quot;</span><span class="p">}</span>
+<span class="lineno"> 6</span> <span class="k">end</span><span class="p">)</span>
+<span class="lineno"> 7</span> 
+<span class="lineno"> 8</span> <span class="c1"># Block until the message is received</span>
+<span class="lineno"> 9</span> <span class="k">receive</span> <span class="k">do</span>
+<span class="lineno">10</span>   <span class="p">{</span><span class="ss">:msg</span><span class="p">,</span> <span class="n">contents</span><span class="p">}</span> <span class="p">-&gt;</span> <span class="nc">IO</span><span class="p">.</span><span class="n">puts</span> <span class="n">contents</span>
+<span class="lineno">11</span> <span class="k">end</span></code></pre></div>
+
+<p>F#</p>
+
+<div class="highlight"><pre><code class="language-fsharp" data-lang="fsharp"><span class="lineno">1</span> <span class="k">let</span> <span class="nv">printRating</span> <span class="n">book</span> <span class="o">=</span>
+<span class="lineno">2</span>   <span class="k">match</span> <span class="n">book</span><span class="o">.</span><span class="n">Rating</span> <span class="k">with</span>
+<span class="lineno">3</span>   <span class="o">|</span> <span class="n">Some</span> <span class="n">rating</span> <span class="o">-&gt;</span>
+<span class="lineno">4</span>     <span class="n">printfn</span> <span class="s">&quot;I give this book %d star(s) out of 5!&quot;</span> <span class="n">rating</span>
+<span class="lineno">5</span>   <span class="o">|</span> <span class="n">None</span> <span class="o">-&gt;</span> <span class="n">printfn</span> <span class="s">&quot;I didn&#39;t review this book&quot;</span></code></pre></div>
+
+</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+
+
+  
+</div>
+</div>
+
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.      <p>
+        Based on <a href="http://rsms.me">Rasmus Andersson's Blog</a> (<a href="https://github.com/rsms/rsms.github.com">Source</a>)
+         - <a href="">Source of this blog on GitHub</a>
+      </p>
+    </footer>
+  </body>
+</html>

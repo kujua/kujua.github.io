@@ -3,7 +3,8 @@ layout: post
 title: Container solutions - a trial
 photo-front-url: /res/elm.jpeg
 photo-front-class: grid-image-wrapper
-sortorder: 2015-02-02
+sortorder: 2015-04-24
+date: 2015-04-24
 ignoredate: 0
 ---
 

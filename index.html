@@ -23,7 +23,7 @@ layout: default
           </info>
           {% if post.updated %}
             <info>
-              <div>  (updated: {{ post.updated }})</div>
+              <div>  (updated: {{ post.updated | date: "%b %Y" }})</div>
             </info>
           {% endif %}
         {% endunless %}

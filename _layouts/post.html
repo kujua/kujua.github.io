@@ -5,13 +5,13 @@ layout: default
   <div class="post single">
     {% unless page.photo_url %}
       <h1>{{ page.title }}</h1>
-      {% unless page.ignoredate == 1 %}  
+      {% unless page.ignoredate == 1 %}
         <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
           {{ page.date | date: "%b %d, %Y" }}
         </info>
         {% if page.updated %}
           <info>
-            <div>  (updated: {{ page.updated }})</div>
+            <div>  (updated: {{ page.updated | date: "%b %d, %Y" }})</div>
           </info>
         {% endif %}
       {% endunless %}
