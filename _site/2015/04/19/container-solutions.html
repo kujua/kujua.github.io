@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" media="screen, projection" href="/css/screen.css" type="text/css">
+  <link href="/css/syntax.css" rel="stylesheet">
+  <title>Wolfgang Loder - Technical Blog</title>
+</head>
+  <body>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/">Wolfgang Loder</a></h1>
+      <ul class="navigation">
+        <!-- <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li> -->
+        <li><a href="/about/">About me</a></li>
+      </ul>
+    </header>
+    <div class="content">
+  <div class="post single">
+    
+      <h1>Container solutions - a trial</h1>
+      
+        <info datetime="2015-04-19">
+          Apr 19, 2015
+        </info>
+        
+      
+    
+    <div class="body"><p><strong>The idea of containers is very compelling. We get rid of heavy virtual machines and just serve lightweight application files.</strong></p>
+
+<p>For a training environment I wanted to have containers for database, web server and IDE. As far as I know it is not possible, or at least not easily possible, to run interactive user interfaces in Docker. So my idea was to have Vagrant as host for an IDE container and two Docker-containers for the services.</p>
+
+<p>I evaluated this setup on an OS X machine. First I installed boot2docker - this is a wrapper for a Linux virtual machine that actually can load the Docker containers and the runtime, because OS X can’t load containers directly. Boot2docker also exists for Windows, but I have not tried it.
+The installation went well. I started the application, which spawns a shell, and after a little waiting I had a Docker prompt and everything was working fine.
+Installing Vagrant was eventless as well and I could run a Vagrant box without problems.</p>
+
+<p>Now to the first test, running a docker container in Vagrant. I specified to run the hello-world container in a vagrantfile:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="no">Vagrant</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+<span class="lineno">2</span>     <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provider</span> <span class="s2">&quot;docker&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">d</span><span class="o">|</span>
+<span class="lineno">3</span>       <span class="n">d</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="s2">&quot;hello-world&quot;</span>
+<span class="lineno">4</span>       <span class="n">d</span><span class="o">.</span><span class="n">remains_running</span> <span class="o">=</span> <span class="kp">false</span>
+<span class="lineno">5</span>     <span class="k">end</span>
+<span class="lineno">6</span> <span class="k">end</span></code></pre></div>
+
+<p>I got a little bit concerned when Vagrant was downloading boot2docker again, apparently a private version as their /docker version is private and not accessible outside of Vagrant. The hello-world container ran and exited and I tried a few times more. I also confirmed that my Docker installation was still working as well.</p>
+
+<p>Time for a break, the computer went to sleep and when I re-started the machine all hell break loose. First I changed my vagrantfile to run two machines, one docker container, one Vagrant box.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="no">Vagrant</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+<span class="lineno"> 2</span> 
+<span class="lineno"> 3</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">define</span> <span class="s2">&quot;hellodocker&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">hellodocker</span><span class="o">|</span>
+<span class="lineno"> 4</span>     <span class="n">hellodocker</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provider</span> <span class="s2">&quot;docker&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">d</span><span class="o">|</span>
+<span class="lineno"> 5</span> 
+<span class="lineno"> 6</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">define</span> <span class="s2">&quot;db&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">db</span><span class="o">|</span>
+<span class="lineno"> 7</span>     <span class="n">db</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="s2">&quot;mitchellh/boot2docker&quot;</span>
+<span class="lineno"> 8</span>   <span class="k">end</span>
+<span class="lineno"> 9</span> 
+<span class="lineno">10</span> <span class="k">end</span></code></pre></div>
+
+<p>The docker machine was never brought up. It told me something about “denied access” and trying to start several times did not change anything. The command <em>vagrant status</em> was hanging and <em>vagrant suspend</em> told me that the Docker provider does not support this command, which is probably a bug. I thought, restarting the machine would bring it back to a clean state. But that failed as well as uninstalling Vagrant and installing it again. In between I had to kill the VirtualBox headless process, because I could not install Vagrant.</p>
+
+<p>My boot2docker installation did not work anymore as well. It could not bring up Docker.</p>
+
+<p>At the end I uninstalled both Vagrant and boot2docker. Re-installing boot2docker at least brought back Docker on the machine. I am not sure what caused the problems. Was it the double installation? Was it the vagrantfile that brought the system into a faulty state? Is it the boot2docker configuration? Is it the operating system?</p>
+
+<p>What concerns me most is that there was no way to get out of the mess, not even re-starting the machine. Vagrant seems to have some persistent cache that survives all events, good or bad.</p>
+
+<p>Eventually I tried on a Ubuntu virtual machine. The installation went well without problems and I could run Docker containers with or without Vagrant.</p>
+
+<p>The next step is to mix them - have one Vagrant box for UI related applications and a few Docker containers for services, databases etc. A story for another day…</p>
+</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+
+
+  
+</div>
+</div>
+
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />All blog posts are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons 4.0 International License (NC,ND)</a>.
+        </br>
+        Blog code and markup based on <a href="http://rsms.me">Rasmus Andersson's Blog</a> (<a href="https://github.com/rsms/rsms.github.com">Source</a>)
+         - <a href="https://github.com/kujua/kujua.github.io">Source of this blog on GitHub</a>
+        </br>
+        All photos by Wolfgang Loder unless specified otherwise.</br>All photos licensed under Creative Commons with Commercial Use unless specified otherwise.
+      </p>
+    </footer>
+  </body>
+</html>
