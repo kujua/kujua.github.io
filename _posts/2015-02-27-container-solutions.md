@@ -9,6 +9,8 @@ photo-front-credit: Glyn Lowe Photoworks
 sortorder: 2015-04-19
 date: 2015-04-19
 ignoredate: 0
+disqus_comments: 1
+disqus_identifier: 2015-02-27-container-solutions  
 ---
 
 **The idea of containers is very compelling. We get rid of heavy virtual machines and just serve lightweight application files.**
