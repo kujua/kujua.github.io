@@ -2,9 +2,9 @@
 layout: post
 title: Technical Debt
 date: 2015-04-10
-sortorder: 2015-04-10
+sortorder: 5000
 disqus_comments: 1
-disqus_identifier: 2015-04-10-technical-debt 
+disqus_identifier: 2015-04-10-technical-debt
 ---
 
 **The topic of technical debt in software development comes up regularly in blog posts, podcasts or talks. I am highlighting some of the practical experiences in trying to reduce technical debt.**

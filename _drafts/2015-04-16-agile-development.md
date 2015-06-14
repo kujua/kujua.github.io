@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Agile Development
-date: 2015-04-20
-sortorder: 2015-04-20
+date: 2015-05-20
+sortorder: 4087
 ---
 
 During my career as a contractor I had many technical interviews. this post is not about the interviews, but about one aspect that changed over time: development process paradigm.

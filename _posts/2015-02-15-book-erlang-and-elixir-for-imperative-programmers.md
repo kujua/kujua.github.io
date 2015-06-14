@@ -3,7 +3,7 @@ layout: post
 title: Book - Erlang and Elixir for imperative programmers
 photo-front-url: /res/wrapper_erlang_title.png
 photo-front-class: grid-image-wrapper-square
-sortorder: 2001-01-01
+sortorder: 9010
 ignoredate: 1
 ---
 
