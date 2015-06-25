@@ -2,6 +2,7 @@
 layout: post
 title: Agile Development
 date: 2015-05-20
+updated: 2015-6-25
 sortorder: 4087
 disqus_comments: 1
 disqus_identifier: 2015-05-20-agile-development
@@ -35,4 +36,4 @@ Another output from the planning poker is the backlog. There is always a manager
 
 One big topic in the agile process is refactoring. This means to change the implementation to the better without touching existing functionality. It is a very good concept, although not many teams are doing it deliberately. Often refactoring is a side effect when fixing bugs, but nothing else. Management does not buy in to take a code base, review it and change it. If the code is deployed to production, this won't happen. Of course, as developers we need to see the business side as well and explain better, why refactoring would be an advantage.
 
-So what is left of the agile development process? If used pragamatically, it can help. Just don't get caught up in the discussion pure vs impure.
+So what is left of the agile development process? If used pragmatically, it can help. Just don't get caught up in the discussion pure vs impure.
