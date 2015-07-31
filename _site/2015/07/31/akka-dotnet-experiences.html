@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" media="screen, projection" href="/css/screen.css" type="text/css">
+  <link href="/css/syntax.css" rel="stylesheet">
+  <title>Wolfgang Loder - Technical Blog</title>
+</head>
+  <body>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/">Wolfgang Loder</a></h1>
+      <ul class="navigation">
+        <!-- <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li> -->
+        <li><a href="/about/">About me</a></li>
+      </ul>
+    </header>
+    <div class="content">
+  <div class="post single">
+    
+      <h1>Akka.net Experiences</h1>
+      
+        <info datetime="2015-07-31">
+          Jul 31, 2015
+        </info>
+        
+      
+    
+    <div class="body"><p><strong>The actor model is the new cool in the .Net world. The concept as such is more than 40 years old and on other platforms there are actor model implementations widely used.</strong></p>
+
+<p>Programming with the actor model is not difficult, but we always have to keep in our minds that everything we do in this model is asynchronous. Usually, web applications in .Net were written in a pure synchronous way: a request comes in, the request is handled on the server, a response is sent back to the client. If the processing takes to long, the connection between the client and the server times out.</p>
+
+<p>This is a simple and effective way to write web applications, although eventually the app will run into scalability problems with either too many concurrent users or backend bottlenecks like database access. Tasks, <em>async</em>- and <em>wait</em>- keywords now take care of asynchronous communication in .Net, but especially their contagious nature is putting many developers off.  </p>
+
+<p>The actor model does not solve this problem without work having to be done by the developer, but it gives a conceptual framework for how to ease the problems. The concept is 40 years old and has been implemented in different languages, Erlang - itself 30 years old - is one of the prime examples. The Java and Scala community has Akka and this is implementation now ported to .Net as Akka.net, which has had its 1.0 release not long time ago: <a href="https://getakka.net">Akka.net</a>.</p>
+
+<p>Documentation for Akka.net is somehow thin, but it is possible to read the very good Akka documentation either for Java or better Scala and get an idea what the framework is about. There are some examples on Github, but going deeper into development will soon let you run against walls.</p>
+
+<p>I am doing a project with Akka for a US/Kenyan company and - bound by an NDA - I can’t say too much about it or show real code, but I can give some notes about my experiences so far.</p>
+
+<p><strong>Notes on messaging</strong></p>
+
+<p>It is very important to use immutable messages for communication with and between actors. I opt for a simple message structure with a hash or dictionary as the main transport for business domain values. The reason for this is to avoid serialization and deserialization problems and enhance performance. Also, updates can be done without breaking existing actor versions. An actor just takes out from the hash what it needs for processing the data and leaves the rest alone.</p>
+
+<p><img src="/res/actormodel-generic.jpg" alt="Actor Messaging" /></p>
+
+<p>A tricky part is actor-to-actor communication regarding response messages. There are two options:</p>
+
+<ul>
+  <li>Tell is the fire-and-forget option. It sends a message to an actor and processes the next message in its queue.</li>
+  <li>Ask is the synchronous option. It sends a message to an actor and waits for the answer, optionally with defining a timeout. <em>Synchronous</em> is not 100% correct, because the Ask-call can be wrapped in a closure or anonymous function and if it is decorated with the <em>async</em>-keyword it can be awaited, making the call asynchronous for the system.</li>
+</ul>
+
+<p>In any case, the second option is blocking the processing of more messages from the actor’s queue, so it needs to be used with caution. In a project’s code you will probably use more Tell- than Ask-communication to keep the system responsive.</p>
+
+<p><strong>Notes on actor hierarchy</strong></p>
+
+<p>Normally actors are grouped by the business process they support. In my designs for business apps there always exists a supervisor, which is a normal actor and distributes the work to other actors in the group. The supervisor is the only actor that knows the business process and handles errors and other responses from the other actors in the group.</p>
+
+<p><img src="/res/actormodel-supervisor.jpg" alt="Supervisor Hierarchy" /></p>
+
+<p>It is also possible to create supervisors for each user of an application and keep the state of this user in the actor. Microsoft’s <em>Halo</em> implementation used this approach for multiplayer games, although with their own actor model implementation <em>Orleans</em>.</p>
+
+<p><strong>Notes on remote actors</strong></p>
+
+<p>Actor groups can be deployed in containers, which exposes and listens to a TCP port that is unique in the system.</p>
+
+<p>For calling actors in remote containers, it is necessary to know the address, which is similar to <em>“akka.tcp://server@localhost:8042/user/remotesupervisor”</em>.</p>
+
+<p>It is possible to get the supervisor reference from the container, but this requires some global variable magic. The location lookup with a predefined address in the configuration is not as accurate as an actor reference. The reference tells us that there is an existent actor, the location lookup, called <em>ActorSelection</em>, just gives us an actor address which might have an existing actor behind it or not. Both cases allow valid calls and do not throw an exception if there is no actor to take a message sent to it. Messages without recipient end up in the <em>DeadLetter</em> queue, by the way.</p>
+
+<p>Talking of containers: who does not think of Docker containers? On Windows it is not possible at the moment, but I am sure it will come soon.</p>
+
+<p>More coming later.</p>
+</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+
+      
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+           /* * * CONFIGURATION VARIABLES * * */
+           var disqus_shortname = 'technicalblogkujua';
+           var disqus_identifier = '2015-07-31-akkadotnet-experiences';
+           /* * * DON'T EDIT BELOW THIS LINE * * */
+           (function() {
+               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+               dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+           })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      
+
+  </div>
+</div>
+
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />All blog posts are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons 4.0 International License (NC,ND)</a>.
+        </br>
+        Blog code and markup based on <a href="http://rsms.me">Rasmus Andersson's Blog</a> (<a href="https://github.com/rsms/rsms.github.com">Source</a>)
+         - <a href="https://github.com/kujua/kujua.github.io">Source of this blog on GitHub</a>
+        </br>
+        All photos by Wolfgang Loder unless specified otherwise.</br>All photos licensed under Creative Commons with Commercial Use unless specified otherwise.
+      </p>
+    </footer>
+  </body>
+</html>
