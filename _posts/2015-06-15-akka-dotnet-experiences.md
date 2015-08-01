@@ -18,7 +18,7 @@ The actor model does not solve this problem without work having to be done by th
 
 Documentation for Akka.net is somehow thin, but it is possible to read the very good Akka documentation either for Java or better Scala and get an idea what the framework is about. There are some examples on Github, but going deeper into development will soon let you run against walls.
 
-I am doing a project with Akka for a US/Kenyan company and - bound by an NDA - I can't say too much about it or show real code, but I can give some notes about my experiences so far.
+I am doing a project with Akka for a company and - bound by an NDA - I can't say too much about it or show real code, but I can give some notes about my experiences so far.
 
 **Notes on messaging**
 
