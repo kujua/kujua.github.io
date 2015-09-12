@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" media="screen, projection" href="/css/screen.css" type="text/css">
+  <link href="/css/syntax.css" rel="stylesheet">
+  <title>Wolfgang Loder - Technical Blog</title>
+</head>
+  <body>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/">Wolfgang Loder</a></h1>
+      <ul class="navigation">
+        <!-- <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li> -->
+        <li><a href="/about/">About me</a></li>
+      </ul>
+    </header>
+    <div class="content">
+  <div class="post single">
+    
+      <h1>Windows 10 - First Impressions</h1>
+      
+        <info datetime="2015-09-12">
+          Sep 12, 2015
+        </info>
+        
+      
+    
+    <div class="body"><p><strong>Windows 10 finally arrived on my developer machine. Read here about the first impressions with the “RTM” version. Of course, Microsoft tries to convince us that there are only update versions and no RTM version.</strong></p>
+
+<p>Following are a few impressions I got from working with Windows 10 for a couple of weeks. I am not talking about a beta version, but about the release version.</p>
+
+<p>Before we start I have to emphasize that I am working (and earning money) with development products from Microsoft since the beginning 90s. Not exclusively, but most of this time. In the last 10 years the percentage changed and other operating systems and development environments came into the mix. This does not mean I am a fanboy, it just means that I would like Microsoft to succeed.</p>
+
+<p>Being a developer also means to be a user of Windows since version 3.0, a journey with all highs and lows.</p>
+
+<p><strong>Updates</strong></p>
+
+<p>This is my biggest problem: even with the Pro-version it is not possible to schedule system updates for a convenient time. I divide my time between Europe and Africa and in Kenya I am using a satellite internet connection. This connection is in fact metered during the day, but unlimited downloads are possible during the night. There is no way - at least I have not found it - to tell Windows 10 that it should not download updates during certain hours. I can schedule the restart, but by then everything has already happened.</p>
+
+<p>Also, don’t forget to uncheck the download option for other Microsoft products - especially Office, otherwise another 1 GB and more will be downloaded on monthly basis. Why Office needs so many and big updates is beyond me, actually.</p>
+
+<p><strong>Font Rendering</strong></p>
+
+<p>Some applications’ text renders awfully. Characters are blurry and almost unreadable. For exmple, it happened to me with Enterprise Architect. Menu text, diagram text etc. was so badly rendered that I could not work. Fortunately it is possible to fix this. In the exe-file properties dialog in the tab ‘Compatibility’ it is possible to check ‘DPI Compatibility’ and after a restart of the application everything looked for me as it should be.</p>
+
+<p>I have not tried it myself, but there seems to be a problem with font rendering on high dpi monitors. A problem that begs belief after this long beta testing phase.</p>
+
+<p><strong>Cortana</strong></p>
+
+<p>As mentioned before, I am in different locations with my development laptop and this throws off all applications with location checking completely. My satellite internet connection in Kenya hits the first ground server in different places, in my case most of the time in Greece. This has funny - or not so funny - consequences. For example, my wife has a yahoo email address that she checks from time to time. Yahoo of course believes, that she is sitting in Greece and displays Greek text which we both can’t read. Even deleting all cookies for the site and restarting did not help, the Yahoo website rechecked and all was in Greek again.</p>
+
+<p>Cortana has a similar problem and displays news from Greece, weather from Athens and so on. Again, I did not find a switch to tell the program not to use the current location, but a defined one. This renders Cortana for me for some aspects more or less useless, because I get recommendations and information for a wrong location.</p>
+
+<p>Otherwise am not really sold: searching does not really bring back my applications or files, too often Cortana goes to the internet and displays results I don’t need. Probably this is a problem of me not using the program properly, but if it is not obvious then the UX is not as good as it should be.</p>
+
+<p><strong>Default Settings</strong></p>
+
+<p>As in previous Windows versions the default settings for Explorer etc. are geared towards normal users. It is no problem to reset some of the settings, for example to display hidden files, file extensions or empty folders. What I don’t like is the change in setting the explorer views for folders. I like to have the file lists sorted by date with the latest file on top. A quick click on ‘Apply to all folders’ helped in Windows versions pre 10. But now it says ‘Apply this setting to all folders of this type’. Not only can’t I see at one glance the type of the folder except seeing a different folder icon, but I have to click ‘Apply’ several times on different folders. If the settings are not changed again as it happened in previous versions is unknown so far.  </p>
+
+<p><strong>For Developers</strong></p>
+
+<p>The update on my development computer was coming late - I guess because of some applications on it that were not or still are not 100% compatible.</p>
+
+<p>One of those applications is GenyMotion. This is actually an example of an application that relies on something else that can’t be controlled and is bitten by it. Some applications rely on APIs that are changed over night or just deprecated, like we all have seen with Twitter, Facebook and other big players.</p>
+
+<p>GenyMotion needs VirtualBox to work and somehow there is a problem in the communication. The first complaints about non-compatibility with Windows 10 were raised in GenyMotion fora in April and there are still problems. VirtualBox was updated and I used the latest development version, but Oracle still says that VirtualBox is not yet compatible with Windows 10. This after months of beta testing and now two months after release.</p>
+
+<p>Windows 10 brings the promise of universal apps and updated .Net libraries. One hyped feature is not available: the new ASP.NET version. It is a refactoring and rewrite of the current version and introduces new features. What I have seen so far it does not fill me with confidence that we get a lightweight framework. It is still in beta (which is more or less an alpha), though.</p>
+
+<p><strong>Verdict</strong></p>
+
+<p>We all will see how Windows 10 will develop in the coming months. At the moment there are some quirks as described above, but also stability of the system. Apart from GenyMotion - mentioned above - there were no crashes with the applications I used. Programs that use graphic cards heavily like Photoshop or games seem to work properly.</p>
+
+<p>Some users have memory problems coming from old drivers, but I have not seen that. Monitoring Task Manager I have the feeling that more memory is used or nor freed, but it never goes beyond a certain limit. In average the operating system uses 2-2.4 GB on a 8 GB machine, so a computer with less memory might run Windows 10, but it will struggle with additional applications. I don’t think anybody wants to run Visual Studio on a 4 GB machine, but it is certainly harder with Windows 10. Switching off certain features like Cortana will help as well.</p>
+
+<p>Overall, all operating systems including OS X and Linux flavors like Ubuntu get very memory hungry and weighted down with non-necessary features, Windows 10 is not different. Privacy is another topic and all systems call ‘home’, more or less and more or less configurable.</p>
+
+<p>For developers, Windows 10 should bring new opportunities. If this is true will be seen.  </p>
+</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+
+      
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+           /* * * CONFIGURATION VARIABLES * * */
+           var disqus_shortname = 'technicalblogkujua';
+           var disqus_identifier = '2015-09-12-windows10-impressions';
+           /* * * DON'T EDIT BELOW THIS LINE * * */
+           (function() {
+               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+               dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+           })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      
+
+  </div>
+</div>
+
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />All blog posts are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons 4.0 International License (NC,ND)</a>.
+        </br>
+        Blog code and markup based on <a href="http://rsms.me">Rasmus Andersson's Blog</a> (<a href="https://github.com/rsms/rsms.github.com">Source</a>)
+         - <a href="https://github.com/kujua/kujua.github.io">Source of this blog on GitHub</a>
+        </br>
+        All photos by Wolfgang Loder unless specified otherwise.</br>All photos licensed under Creative Commons with Commercial Use unless specified otherwise.
+      </p>
+    </footer>
+  </body>
+</html>
