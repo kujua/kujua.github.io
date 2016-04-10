@@ -3,7 +3,7 @@ layout: post
 title: Windows 10 - First Impressions
 sortorder: 4075
 date: 2015-09-12
-updated: 2015-9-20
+updated: 2016-1-25
 ignoredate: 0
 disqus_comments: 1
 disqus_identifier: 2015-09-12-windows10-impressions
@@ -59,9 +59,9 @@ Not only can't I see at one glance the type of the folder except seeing a differ
 
 The update on my development computer was coming late - I guess because of some applications on it that were not or still are not 100% compatible.
 
-One of those applications is GenyMotion. This is actually an intersting example of an application that relies on a third party software or API that can't be controlled and is bitten by it. Some applications rely on APIs that are changed over night or just deprecated, like we all have seen with Twitter, Facebook and other big players.
+One of those applications is GenyMotion. This is actually an interesting example of an application that relies on a third party software or API that can't be controlled and is bitten by it. Some applications rely on APIs that are changed over night or just deprecated, like we all have seen with Twitter, Facebook and other big players.
 
-GenyMotion needs VirtualBox to work and somehow there is a problem in the communication. The first complaints about non-compatibility with Windows 10 were raised in GenyMotion fora in April and there are still problems. VirtualBox was updated and I used the latest development version, but Oracle still says that VirtualBox is not yet compatible with Windows 10. This after months of beta testing and now two months after release. I got it to work, but from time to time GenyMotion just crashes. I am not blaming the product, it just shows not to be depending on something one can't control, as others have found out with aplications based on Twitter or Facebook APIs.
+GenyMotion needs VirtualBox to work and somehow there is a problem in the communication. The first complaints about non-compatibility with Windows 10 were raised in GenyMotion fora in April and there are still problems. VirtualBox was updated and I used the latest development version, but Oracle still says that VirtualBox is not yet compatible with Windows 10. This after months of beta testing and now two months after release. I got it to work, but from time to time GenyMotion just crashes. I am not blaming the product, it just shows not to be depending on something one can't control, as others have found out with applications based on Twitter or Facebook APIs.
 
 Windows 10 brings the promise of universal apps and updated .Net libraries. One hyped feature is not available: the new ASP.NET version. It is a refactoring and rewrite of the current version and introduces new features. What I have seen so far it does not fill me with confidence that we get a lightweight framework. It is still in beta (which is more or less an alpha), though.
 
