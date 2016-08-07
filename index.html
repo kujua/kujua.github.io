@@ -6,7 +6,9 @@ layout: default
 {% for page in tutorials %}
 // do some work
 {% endfor %} -->
-
+<!-- <div class="col-second">
+  {% include sidebar.html %}
+</div> -->
 <div class="posts">
   <div class="content full-bleed" id="recent-posts">
     {% assign sorted_posts = (site.posts | sort: 'sortorder') %}

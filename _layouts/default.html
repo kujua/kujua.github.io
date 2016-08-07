@@ -7,16 +7,28 @@
   <title>Wolfgang Loder - Technical Blog</title>
 </head>
   <body{% if page.wide_layout %} class="wide"{% endif %}>
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TCQQCF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TCQQCF');</script>
+<!-- End Google Tag Manager -->
     <header>
       <h1 class="logo" onclick="document.location.href='/';"><a href="/">Wolfgang Loder</a></h1>
       <ul class="navigation">
         <!-- <li><a href="/photos/"{% if page.url contains "/photos/" %}class="active"{% endif %} title="A selection of recent photography">Photography</a></li>
         <li><a href="/projects/"{% if page.url contains "/projects/" %}class="active"{% endif %} title="Projects I am or was involved in">Projects</a></li>
         <li><a href="/archive/"{% if page.url contains "/archive/" %}class="active"{% endif %} title="Archived articles">Archive</a></li> -->
+        <li><a href="/my-books/"{% if page.url contains "/my-books/" %}class="active"{% endif %}>My books</a></li>
+        <li><a href="{% post_url 2015-01-01-why-a-blog %}"{% if page.url contains "/why-a-blog" %}class="active"{% endif %}>Why a technical blog?</a></li>
         <li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About me</a></li>
       </ul>
     </header>
     {{ content }}
+
     <footer>
       <p>
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />All blog posts are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons 4.0 International License (NC,ND)</a>.

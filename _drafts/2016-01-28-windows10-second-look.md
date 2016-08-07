@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Windows 10 - Second Look
+title: Windows 10 for Developers
 sortorder: 4072
-date: 2016-01-28
+date: 2016-07-28
 ignoredate: 0
 disqus_comments: 1
-disqus_identifier: 2016-01-28-windows10-second-look
+disqus_identifier: 2016-01-28-windows10-for-developers
 ---
 
 **A few weeks ago I wrote about my first impressions of Windows 10 [Windows 10 - First Look]({% post_url 2015-09-12-windows-10-first-impressions %}). Now I had more time to work with it and here are my findings.**

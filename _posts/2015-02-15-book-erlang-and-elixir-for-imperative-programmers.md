@@ -5,6 +5,7 @@ photo-front-url: /res/wrapper_erlang_title.png
 photo-front-class: grid-image-wrapper-square
 sortorder: 10
 ignoredate: 1
+ignoreall: 1
 ---
 
 **Last year I started developing an application that needs a very reliable, fast and error resilient web service. Once I knew the requirements I also knew the technology: Erlang. What is good enough for a telecommunication router should be more than enough for my service.**
