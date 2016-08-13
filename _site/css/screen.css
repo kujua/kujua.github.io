@@ -161,9 +161,9 @@ header ul.navigation li:first-child {
   margin-left: 0; }
 
 header ul.navigation li a {
-  color: #888;
+  color: #00f;
   text-decoration: none;
-  font-size: 11px; }
+  font-size: 14px; }
 
 header ul.navigation li a:hover {
   color: black;
@@ -1553,3 +1553,10 @@ footer a:link {
   }
   html.ipad { zoom:70%; }
 }*/
+.col-second {
+  position: relative;
+  box-sizing: border-box;
+  width: 680px;
+  padding: 20px;
+  background: #EEE;
+  z-index: 10; }

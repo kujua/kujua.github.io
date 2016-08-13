@@ -7,12 +7,23 @@
   <title>Wolfgang Loder - Technical Blog</title>
 </head>
   <body>
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TCQQCF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TCQQCF');</script>
+<!-- End Google Tag Manager -->
     <header>
       <h1 class="logo" onclick="document.location.href='/';"><a href="/">Wolfgang Loder</a></h1>
       <ul class="navigation">
         <!-- <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
         <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
         <li><a href="/archive/" title="Archived articles">Archive</a></li> -->
+        <li><a href="/my-books/">My books</a></li>
+        <li><a href="/2015/01/01/why-a-blog.html">Why a technical blog?</a></li>
         <li><a href="/about/">About me</a></li>
       </ul>
     </header>
@@ -32,81 +43,7 @@
 <p>The next paragraph is the actual text.</p>
 
 <!-- https://gist.github.com/StephanHoyer/91d8175507fcae8fb31a
-<noscript><pre>&#39;use strict&#39;;
-
-var Octokat = require(&#39;octokat&#39;);
-var extend = require(&#39;lodash/object/assign&#39;);
-
-var defaults = {
-  branchName: &#39;master&#39;,
-  token: &#39;&#39;,
-  username: &#39;&#39;,
-  reponame: &#39;&#39;
-};
-
-function init(options) {
-  options = extend({}, defaults, options);
-  var head;
-
-  var octo = new Octokat({
-    token: options.token
-  });
-  var repo = octo.repos(options.username, options.reponame);
-
-  function fetchHead() {
-    return repo.git.refs.heads(options.branchName).fetch();
-  }
-
-  function fetchTree() {
-    return fetchHead().then(function(commit) {
-      head = commit;
-      return repo.git.trees(commit.object.sha).fetch();
-    });
-  }
-
-  function commit(files, message) {
-    return Promise.all(files.map(function(file) {
-      return repo.git.blobs.create({
-        content: file.content,
-        encoding: &#39;utf-8&#39;
-      });
-    })).then(function(blobs) {
-      return fetchTree().then(function(tree) {
-        return repo.git.trees.create({
-          tree: files.map(function(file, index) {
-            return {
-              path: file.path,
-              mode: &#39;100644&#39;,
-              type: &#39;blob&#39;,
-              sha: blobs[index].sha
-            };
-          }),
-          basetree: tree.sha
-        });
-      });
-    }).then(function(tree) {
-      return repo.git.commits.create({
-        message: message,
-        tree: tree.sha,
-        parents: [
-          head.object.sha
-        ]
-      });
-    }).then(function(commit) {
-      return repo.git.refs.heads(options.branchName).update({
-        sha: commit.sha
-      });
-    });
-
-  }
-
-  return {
-    commit: commit
-  };
-}
-
-module.exports = init;
-</pre></noscript><script src="https://gist.github.com/StephanHoyer/91d8175507fcae8fb31a.js"> </script> -->
+<script src="https://gist.github.com/StephanHoyer/91d8175507fcae8fb31a.js"> </script> -->
 
 <h5 id="ruby">Ruby</h5>
 
@@ -175,6 +112,7 @@ module.exports = init;
 
   </div>
 </div>
+
 
     <footer>
       <p>
