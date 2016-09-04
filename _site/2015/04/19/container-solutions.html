@@ -48,27 +48,43 @@ Installing Vagrant was eventless as well and I could run a Vagrant box without p
 
 <p>Now to the first test, running a docker container in Vagrant. I specified to run the hello-world container in a vagrantfile:</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="no">Vagrant</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
-<span class="lineno">2</span>     <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provider</span> <span class="s2">&quot;docker&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">d</span><span class="o">|</span>
-<span class="lineno">3</span>       <span class="n">d</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="s2">&quot;hello-world&quot;</span>
-<span class="lineno">4</span>       <span class="n">d</span><span class="o">.</span><span class="n">remains_running</span> <span class="o">=</span> <span class="kp">false</span>
-<span class="lineno">5</span>     <span class="k">end</span>
-<span class="lineno">6</span> <span class="k">end</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="code"><pre><span class="no">Vagrant</span><span class="p">.</span><span class="nf">configure</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+    <span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">provider</span> <span class="s2">"docker"</span> <span class="k">do</span> <span class="o">|</span><span class="n">d</span><span class="o">|</span>
+      <span class="n">d</span><span class="p">.</span><span class="nf">image</span> <span class="o">=</span> <span class="s2">"hello-world"</span>
+      <span class="n">d</span><span class="p">.</span><span class="nf">remains_running</span> <span class="o">=</span> <span class="kp">false</span>
+    <span class="k">end</span>
+<span class="k">end</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>I got a little bit concerned when Vagrant was downloading boot2docker again, apparently a private version as their /docker version is private and not accessible outside of Vagrant. The hello-world container ran and exited and I tried a few times more. I also confirmed that my Docker installation was still working as well.</p>
 
 <p>Time for a break, the computer went to sleep and when I re-started the machine all hell break loose. First I changed my vagrantfile to run two machines, one docker container, one Vagrant box.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="no">Vagrant</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
-<span class="lineno"> 2</span> 
-<span class="lineno"> 3</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">define</span> <span class="s2">&quot;hellodocker&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">hellodocker</span><span class="o">|</span>
-<span class="lineno"> 4</span>     <span class="n">hellodocker</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provider</span> <span class="s2">&quot;docker&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">d</span><span class="o">|</span>
-<span class="lineno"> 5</span> 
-<span class="lineno"> 6</span>   <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">define</span> <span class="s2">&quot;db&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">db</span><span class="o">|</span>
-<span class="lineno"> 7</span>     <span class="n">db</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="s2">&quot;mitchellh/boot2docker&quot;</span>
-<span class="lineno"> 8</span>   <span class="k">end</span>
-<span class="lineno"> 9</span> 
-<span class="lineno">10</span> <span class="k">end</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="code"><pre><span class="no">Vagrant</span><span class="p">.</span><span class="nf">configure</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+
+  <span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">define</span> <span class="s2">"hellodocker"</span> <span class="k">do</span> <span class="o">|</span><span class="n">hellodocker</span><span class="o">|</span>
+    <span class="n">hellodocker</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">provider</span> <span class="s2">"docker"</span> <span class="k">do</span> <span class="o">|</span><span class="n">d</span><span class="o">|</span>
+
+  <span class="n">config</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">define</span> <span class="s2">"db"</span> <span class="k">do</span> <span class="o">|</span><span class="n">db</span><span class="o">|</span>
+    <span class="n">db</span><span class="p">.</span><span class="nf">vm</span><span class="p">.</span><span class="nf">box</span> <span class="o">=</span> <span class="s2">"mitchellh/boot2docker"</span>
+  <span class="k">end</span>
+
+<span class="k">end</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>The docker machine was never brought up. It told me something about “denied access” and trying to start several times did not change anything. The command <em>vagrant status</em> was hanging and <em>vagrant suspend</em> told me that the Docker provider does not support this command, which is probably a bug. I thought, restarting the machine would bring it back to a clean state. But that failed as well as uninstalling Vagrant and installing it again. In between I had to kill the VirtualBox headless process, because I could not install Vagrant.</p>
 

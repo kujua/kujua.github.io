@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" media="screen, projection" href="/css/screen.css" type="text/css">
+  <link href="/css/syntax.css" rel="stylesheet">
+  <title>Wolfgang Loder - Technical Blog</title>
+</head>
+  <body>
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TCQQCF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TCQQCF');</script>
+<!-- End Google Tag Manager -->
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/">Wolfgang Loder</a></h1>
+      <ul class="navigation">
+        <!-- <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li> -->
+        <li><a href="/my-books/">My books</a></li>
+        <li><a href="/2015/01/01/why-a-blog.html">Why a technical blog?</a></li>
+        <li><a href="/about/">About me</a></li>
+      </ul>
+    </header>
+    <div class="content">
+  <div class="post single">
+    
+      <h1>Publishing a book on Leanpub</h1>
+      
+        <info datetime="2016-09-01">
+          Sep 01, 2016
+        </info>
+        
+      
+    
+    <div class="body"><p><strong>A few days ago I published my first book on Leanpub. Overall, it was a very good experience.</strong></p>
+
+<p><a href="https://leanpub.com">Leanpub</a> is a self-publishing platform that encourages <em>lean</em> publishing: Even if the book is not finished it should be made available to potential readers and buyers. It is like a kickstarter book project where readers support the writing of a book, not knowing if they will ever get a finished product.</p>
+
+<p>It is a good idea to publish the book in its infant state, but there are pitfalls as well. I published the first chapters of the <a href="https://leanpub.com/erlangandelixirforimperativeprogrammers">Erlang/Elixir book</a> and then it stayed there for a long time, because I was contracted for an unexpected project and could not write. Fortunately the readers I had at that time did not demand their money back. It was a bit embarassing for me - all the time estimations I had were completely blown away.</p>
+
+<p>Estimations were also wrong, because unexpected issues can occur:</p>
+
+<ul>
+  <li>Code highlighting was not always working. I have to stress that this issue also had to do with misunderstandings how the highlighting engine works. In any case, whenever I went to Leanpub’s Google group my issues were answered within the delays of dfferent time zones and support was very helpful.</li>
+  <li>Formatting with markdown did not always bring the expected result. I remember trying to define a table and wasted a whole day making this work. It is this sort of problem where you have something working, then you add a feature like in this case a row or column and it totally falls apart. Eventually I gave up and formatted it in a different way, because <em>epub</em> and <em>mobi</em> would not render the table as I wanted anyway.</li>
+  <li>I had to work out my writing process and it took me a while until I was happy.</li>
+</ul>
+
+<p>Once everything was in place and my external project had finished writing the book was moving on a fair pace. The most important thing that can be said about Leanpub is that it never got into my way. When I wanted to create the book to preview it is was just doing it without any problems. I used Dropbox publishing, so my texts were copied to the shared folder and the results were loaded to this folder as well where I could download it from. There were a few times when the website was not available, but I guess this had to do with the different time zones and nightly maintenance on the Leanpub servers.</p>
+
+<p>Let’s examine my writing process a little bit more:</p>
+
+<ul>
+  <li>As mentioned before, all file exchange between my computer and Leanpub was done via a Dropbox shared folder.</li>
+  <li>I did not want to work on the Dropbox folder, so I created a project on my computer as working folder.</li>
+  <li>Being a software developer, I set up a git project to make sure I have versions of my files and pushed the local repository to a private GitHub repository.</li>
+  <li>I also did not want to work directly on the markup files that are used to create the book. The reason again is to keep files I work on separated from the files I created a book from, even if it is a preview only. Both sets of files are in the git repository and if something goes wrong - and it will! - it is possible to go back to a previous version.</li>
+  <li>All this sounds a bit complicated, but I never lost anything I have written. It needs a fair amount of copying text, though. This can be achieved by doing it manually or automating it. I wrote some scripts for automation, but most of the time I just copied changed text around, especially at a later stage of the book. Sometimes it is good not to trust your own programming abilities 100%…</li>
+  <li>It is not only text that had to be copied, but also images and code examples. One of the challenges was to keep the running number of the code examples correct. The examples are numbered like <em>Example 4-2</em> which means example number two in chapter 4. First, I went through the chapters and did the numbering manually, but when the chapters got larger and the changes more, I just wrote a small Perl script to automate this task.</li>
+  <li>A very important, but also a bit boring task is proof reading before it can be given to somebody else for editing. Reading through 300 pages again and again is not very pleasant and takes some time.</li>
+</ul>
+
+<p>I wrote the book on a MacBook Pro with lots of memory to have all applications I need opened including one or two virtual machines. My editor for the text is <a href="https://www.literatureandlatte.com/scrivener.php">Scrivener</a> - I used it for some time now and it deserves its own blog post. For the code I used different editors, but mostly <a href="https://atom.io/">Atom</a>.</p>
+
+<p>Leanpub also provides a PDF version that can be uploaded to Amazon for offering a print-on-demand book. In fact, they encourage authors to do this once the book is 100% finished.</p>
+
+<p><strong>Conclusion</strong></p>
+
+<p>It was a very good experience for me to publish on Leanpub. They don’t take a lot of money, so there is a nice chunk of royalties left. I can only recommend it to anyone who wants to publish a book.</p>
+</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+
+      
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+           /* * * CONFIGURATION VARIABLES * * */
+           var disqus_shortname = 'technicalblogkujua';
+           var disqus_identifier = '2016-09-01-leanpub-scrivener';
+           /* * * DON'T EDIT BELOW THIS LINE * * */
+           (function() {
+               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+               dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+           })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      
+
+  </div>
+</div>
+
+
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />All blog posts are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons 4.0 International License (NC,ND)</a>.
+        </br>
+        Blog code and markup based on <a href="http://rsms.me">Rasmus Andersson's Blog</a> (<a href="https://github.com/rsms/rsms.github.com">Source</a>)
+         - <a href="https://github.com/kujua/kujua.github.io">Source of this blog on GitHub</a>
+        </br>
+        All photos by Wolfgang Loder unless specified otherwise.</br>All photos licensed under Creative Commons with Commercial Use unless specified otherwise.
+      </p>
+    </footer>
+  </body>
+</html>

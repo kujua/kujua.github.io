@@ -3,6 +3,7 @@ layout: post
 title: Roadmap Books
 sortorder: 4060
 date: 2016-08-01
+ignoredate: 1
 ---
 
 **My planned books until end 2017**

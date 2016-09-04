@@ -42,7 +42,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <p>Programming with the actor model is not difficult, but we always have to keep in our minds that everything we do in this model is asynchronous. Usually, web applications in .Net were written in a pure synchronous way: a request comes in, the request is handled on the server, a response is sent back to the client. If the processing takes to long, the connection between the client and the server times out.</p>
 
-<p>This is a simple and effective way to write web applications, although eventually the app will run into scalability problems with either too many concurrent users or backend bottlenecks like database access. Tasks, <em>async</em>- and <em>wait</em>- keywords now take care of asynchronous communication in .Net, but especially their contagious nature is putting many developers off.  </p>
+<p>This is a simple and effective way to write web applications, although eventually the app will run into scalability problems with either too many concurrent users or backend bottlenecks like database access. Tasks, <em>async</em>- and <em>wait</em>- keywords now take care of asynchronous communication in .Net, but especially their contagious nature is putting many developers off.</p>
 
 <p>The actor model does not solve this problem without work having to be done by the developer, but it gives a conceptual framework for how to ease the problems. The concept is 40 years old and has been implemented in different languages, Erlang - itself 30 years old - is one of the prime examples. The Java and Scala community has Akka and this is implementation now ported to .Net as Akka.net, which has had its 1.0 release not long time ago: <a href="https://getakka.net">Akka.net</a>.</p>
 
