@@ -8,7 +8,7 @@ disqus_comments: 1
 disqus_identifier: 2015-06-17-future-web-applications
 ---
 
-**Have pure web applications a future in view of mobile apps? Let's investigate.**
+**Have pure web applications a future in view of mobile apps or will they slowly disppear? Let's investigate.**
 
 When I talk to fellow developers and mention the possibility that web applications as we see them now will disappear they look at me with big eyes, shake their head, turn around and walk away.
 

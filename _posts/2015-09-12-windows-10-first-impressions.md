@@ -9,7 +9,9 @@ disqus_comments: 1
 disqus_identifier: 2015-09-12-windows10-impressions
 ---
 
-**Windows 10 finally arrived on my developer machine. Read here about the first impressions with the "RTM" version. Of course, Microsoft tries to convince us that there are only update versions and no RTM version.**
+**Windows 10 finally arrived on my developer machine. Read here about the first impressions with the "RTM" version.**
+
+Of course, Microsoft tries to convince us that there are only update versions and no RTM version.
 
 Following are a few impressions I got from working with Windows 10 for a couple of weeks. I am not talking about a beta version, but about the release version.
 

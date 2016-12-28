@@ -1,838 +1,456 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <link rel="stylesheet" href="/css/material.min.css">
-  <script src="/css/material.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <!-- <link rel="stylesheet" media="screen, projection" href="/css/screen.css" type="text/css">
-  <link href="/css/syntax.css" rel="stylesheet"> -->
-  <link href="/css/main.css" rel="stylesheet">
-  <title>Wolfgang Loder - Technical Blog</title>
-  <!-- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <link rel="stylesheet" href="/css/material.min.css">
+    <script src="/css/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" media="screen, projection" href="/css/screen.css" type="text/css">
+    <link href="/css/syntax.css" rel="stylesheet"> -->
+    <link href="/css/main.css" rel="stylesheet">
+    <title>Wolfgang Loder - Technical Blog</title>
+    <!-- <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-82117620-1', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-82117620-1', 'auto');
+    ga('send', 'pageview');
 
-</script> -->
+  </script> -->
 </head>
-  <body  >
+<body >
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>(function (d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
+  js = d.createElement(s);
+  js.id = id;
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-    <!-- <header>
-      <h1 class="logo" onclick="document.location.href='/';"><a href="/">Wolfgang Loder</a></h1>
-      <ul class="navigation"> -->
-        <!-- <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
-        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
-        <li><a href="/archive/" title="Archived articles">Archive</a></li> -->
-        <!-- <li><a href="/my-books/">My books</a></li>
-        <li><a href="/2015/01/01/why-a-blog.html">Why a technical blog?</a></li>
-        <li><a href="/about/">About me</a></li>
-      </ul>
-    </header> -->
+<!-- <header>
+  <h1 class="logo" onclick="document.location.href='/';"><a href="/">Wolfgang Loder</a></h1>
+  <ul class="navigation"> -->
+<!-- <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+<li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+<li><a href="/archive/" title="Archived articles">Archive</a></li> -->
+<!-- <li><a href="/my-books/">My books</a></li>
+<li><a href="/2015/01/01/why-a-blog.html">Why a technical blog?</a></li>
+<li><a href="/about/">About me</a></li>
+</ul>
+</header> -->
 
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="header-layout-transparent mdl-layout__header mdl-layout__header--transparent">
-  <div class="mdl-layout__header-row">
-    <!-- Title -->
-    <span class="mdl-layout-title">Wolfgang Loder</span>
-    <!-- Add spacer, to align navigation to the right -->
-    <!-- <div class="mdl-layout-spacer"></div>
-    <!-- Navigation -->
-    <!-- <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Why a technical Blog?</a>
-      <!-- <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a> -->
-      <!-- <a class="mdl-navigation__link" href="">About Me</a> -->
-    <!-- </nav>  -->
-  </div>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="header-layout-transparent mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Wolfgang Loder</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <!-- <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <!-- <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Why a technical Blog?</a>
+          <!-- <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a> -->
+        <!-- <a class="mdl-navigation__link" href="">About Me</a> -->
+        <!-- </nav>  -->
+    </div>
 </header>
 
-      <!-- 
- -->
-<!-- <div class="col-second">
-  <div class="col-box col-box-author">
-  <img class="avatar" src="" alt="">
-  <div class="col-box-title name"></div>
-  <p></p>
-  <p class="contact">
-    
-    
-    
-  </p>
-</div>
+    <div class="page-content">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--6-col mdl-shadow--2dp" style="background-color: whitesmoke">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col">
+                    <img src="res/erlangapress.jpg" alt="Erlang and Elixir for Imperative Programmers" height="258px" width="181px"/>
+                </div>
+                <div class="mdl-cell mdl-cell--8-col" style="padding-left: 10px;">
+                    <div class="mdl-card__title-text">Available now !</div>
+                    <div class="mdl-card__supporting-text">
+                        <p>This book </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col mdl-shadow--2dp" style="background-color: whitesmoke">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col">
+                    <img src="res/elmapress.jpg" alt="Web Applications with Elm" height="258px" width="185px"/>
+                </div>
+                <div class="mdl-cell mdl-cell--8-col" style="padding-left: 10px;">
+                    <p>Text here...</p>
+                    <p>Text here...</p>
+                    <p>Text here...</p>
+                </div>
+            </div>
+        </div>
 
-<div class="col-box">
-  <div class="col-box-title">Newest Posts</div>
-  <ul class="post-list">
-    
-      <li><a class="post-link" href="/2016/09/03/self-publishing.html">Self-Publishing vs Traditional Publishing</a></li>
-    
-      <li><a class="post-link" href="/2016/09/01/book-leanpub-scrivener.html">Publishing a book on Leanpub</a></li>
-    
-      <li><a class="post-link" href="/2016/08/02/about-software-engineering-series.html">Software Engineering Series</a></li>
-    
-      <li><a class="post-link" href="/2016/08/01/about-starterkit-series.html">Starterkit Series</a></li>
-    
-      <li><a class="post-link" href="/2015/09/12/windows-10-first-impressions.html">Windows 10 - First Impressions</a></li>
-    
-  </ul>
-</div>
-
-<div class="col-box post-toc hide">
-  <div class="col-box-title">TOC</div>
-</div>
-</div> -->
-<!-- <div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col" style="background-color: white;">
-    1
-  </div>
-  <div class="mdl-cell mdl-cell--4-col" style="background-color: white;">
-    2
-  </div>
-  <div class="mdl-cell mdl-cell--2-col" style="background-color: green;">
-    3
-  </div> -->
- <div class="mdl-grid">
-   <div class="mdl-cell mdl-cell--6-col" style="background-color: green">
-     ...
-   </div>
-   <div class="mdl-cell mdl-cell--6-col" style="background-color: blue">
-     ...
-   </div>
-   <!-- <div class="mdl-cell mdl-cell--3-col">
-     ...
-   </div>
-   <div class="mdl-cell mdl-cell--3-col">
-     ...
-   </div> -->
-   
-   
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">Why a technical blog?</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>Jan 1, 2015</span>
-          <p><p><strong>Starting a technical blog is a commitment. Many do quite well in the beginning and then fade slowly away. Many times I find an interesting article for a specific topic on Google and then realize that this blog entry was from years ago. It is still relevant and I wonder what happened to the author.</strong></p>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2015/01/01/why-a-blog.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/01/01/why-a-blog">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/01/01/why-a-blog">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2015/01/01/why-a-blog.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2015/01/01/why-a-blog.html&text=Why a technical blog?&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2015/01/01/why-a-blog.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">Book - Erlang and Elixir for imperative programmers</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>Feb 15, 2015</span>
-          <p><p><strong>Last year I started developing an application that needs a very reliable, fast and error resilient web service. Once I knew the requirements I also knew the technology: Erlang. What is good enough for a telecommunication router should be more than enough for my service.</strong></p>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2015/02/15/book-erlang-and-elixir-for-imperative-programmers.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/02/15/book-erlang-and-elixir-for-imperative-programmers">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/02/15/book-erlang-and-elixir-for-imperative-programmers">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2015/02/15/book-erlang-and-elixir-for-imperative-programmers.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2015/02/15/book-erlang-and-elixir-for-imperative-programmers.html&text=Book - Erlang and Elixir for imperative programmers&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2015/02/15/book-erlang-and-elixir-for-imperative-programmers.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">Software Engineering Series</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>Aug 2, 2016</span>
-          <p><h3 id="software-engineering-series">Software Engineering Series</h3>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2016/08/02/about-software-engineering-series.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2016/08/02/about-software-engineering-series">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2016/08/02/about-software-engineering-series">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2016/08/02/about-software-engineering-series.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2016/08/02/about-software-engineering-series.html&text=Software Engineering Series&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2016/08/02/about-software-engineering-series.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">Self-Publishing vs Traditional Publishing</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>Sep 3, 2016</span>
-          <p><p><strong>My experiences with self-publishing a book and a traditional publisher.</strong></p>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2016/09/03/self-publishing.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2016/09/03/self-publishing">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2016/09/03/self-publishing">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2016/09/03/self-publishing.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2016/09/03/self-publishing.html&text=Self-Publishing vs Traditional Publishing&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2016/09/03/self-publishing.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">Publishing a book on Leanpub</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>Sep 1, 2016</span>
-          <p><p><strong>A few days ago I published my first book on Leanpub. Overall, it was a very good experience.</strong></p>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2016/09/01/book-leanpub-scrivener.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2016/09/01/book-leanpub-scrivener">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2016/09/01/book-leanpub-scrivener">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2016/09/01/book-leanpub-scrivener.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2016/09/01/book-leanpub-scrivener.html&text=Publishing a book on Leanpub&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2016/09/01/book-leanpub-scrivener.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">Starterkit Series</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>Aug 1, 2016</span>
-          <p><h3 id="starterkit-series">Starterkit Series</h3>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2016/08/01/about-starterkit-series.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2016/08/01/about-starterkit-series">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2016/08/01/about-starterkit-series">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2016/08/01/about-starterkit-series.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2016/08/01/about-starterkit-series.html&text=Starterkit Series&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2016/08/01/about-starterkit-series.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">Windows 10 - First Impressions</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>Sep 12, 2015</span>
-          <p><p><strong>Windows 10 finally arrived on my developer machine. Read here about the first impressions with the “RTM” version. Of course, Microsoft tries to convince us that there are only update versions and no RTM version.</strong></p>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2015/09/12/windows-10-first-impressions.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/09/12/windows-10-first-impressions">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/09/12/windows-10-first-impressions">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2015/09/12/windows-10-first-impressions.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2015/09/12/windows-10-first-impressions.html&text=Windows 10 - First Impressions&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2015/09/12/windows-10-first-impressions.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">Akka.net Experiences</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>Jul 31, 2015</span>
-          <p><p><strong>The actor model is the new cool in the .Net world. The concept as such is more than 40 years old and on other platforms there are actor model implementations widely used.</strong></p>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2015/07/31/akka-dotnet-experiences.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/07/31/akka-dotnet-experiences">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/07/31/akka-dotnet-experiences">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2015/07/31/akka-dotnet-experiences.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2015/07/31/akka-dotnet-experiences.html&text=Akka.net Experiences&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2015/07/31/akka-dotnet-experiences.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">The Future of Web Applications</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>Jun 17, 2015</span>
-          <p><p><strong>Have pure web applications a future in view of mobile apps? Let’s investigate.</strong></p>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2015/06/17/future-web-applications.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/06/17/future-web-applications">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/06/17/future-web-applications">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2015/06/17/future-web-applications.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2015/06/17/future-web-applications.html&text=The Future of Web Applications&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2015/06/17/future-web-applications.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">Agile Development</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>May 20, 2015</span>
-          <p><p>During my career as a contractor I had many technical interviews. this post is not about the interviews, but about one aspect that changed over time: development process paradigm.</p>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2015/05/20/agile-development.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/05/20/agile-development">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/05/20/agile-development">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2015/05/20/agile-development.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2015/05/20/agile-development.html&text=Agile Development&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2015/05/20/agile-development.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">Container solutions - a trial</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>Apr 19, 2015</span>
-          <p><p><strong>The idea of containers is very compelling. We get rid of heavy virtual machines and just serve lightweight application files.</strong></p>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2015/04/19/container-solutions.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/04/19/container-solutions">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/04/19/container-solutions">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2015/04/19/container-solutions.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2015/04/19/container-solutions.html&text=Container solutions - a trial&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2015/04/19/container-solutions.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" >
-          <h2 class="mdl-card__title-text">Technical Debt</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span>Apr 10, 2015</span>
-          <p><p><strong>The topic of technical debt in software development comes up regularly in blog posts, podcasts or talks. I am highlighting some of the practical experiences in trying to reduce technical debt.</strong></p>
-
-</p>
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/2015/04/10/technical-debt.html">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/04/10/technical-debt">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/04/10/technical-debt">
-            <li><a href="https://www.facebook.com/dialog/share?app_id=&display=page&href=/2015/04/10/technical-debt.html&redirect_uri=" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url=/2015/04/10/technical-debt.html&text=Technical Debt&via=" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url=/2015/04/10/technical-debt.html" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      
-   </div>
-  <!-- <div class="content full-bleed" id="recent-posts">
-    
-    
-      
-  
-      
-  
-      
-  
-      
-      <a href="/2016/09/03/self-publishing.html" class="post-excerpt">
-      <div class="padded-content">
-        <div class="title">Self-Publishing vs Traditional Publishing</div>
         
-          
-            <info datetime="">
-              Sep 2016
-            </info>
-            
-          
-          
-          
-            <span class="body">My experiences with self-publishing a book and a traditional publisher.
-
-</span>
-          
-          
-          <!-- post.photo_url -->
-      <!-- </div>
-    </a>
-    
-  
-      
-      <a href="/2016/09/01/book-leanpub-scrivener.html" class="post-excerpt">
-      <div class="padded-content">
-        <div class="title">Publishing a book on Leanpub</div>
         
-          
-            <info datetime="">
-              Sep 2016
-            </info>
             
-          
-          
-            <div class="grid-image-wrapper-square" style="background-image:url('/res/wrapper_erlang_title.png');"></div>
-            
-          
-          
-            <span class="body">A few days ago I published my first book on Leanpub. Overall, it was a very good experience.
-
-</span>
-          
-          
-          <!-- post.photo_url -->
-      <!-- </div>
-    </a>
-    
-  
-      
-  
-      
-      <a href="/2015/09/12/windows-10-first-impressions.html" class="post-excerpt">
-      <div class="padded-content">
-        <div class="title">Windows 10 - First Impressions</div>
         
-          
-            <info datetime="">
-              Sep 2015
-            </info>
             
-              <info>
-                <div>  (updated: Jan 2016)</div>
-              </info>
-            
-          
-          
-          
-            <span class="body">Windows 10 finally arrived on my developer machine. Read here about the first impressions with the “RTM” version. Of course, Microsoft tries to convince us that there are only update versions and no RTM version.
-
-</span>
-          
-          
-          <!-- post.photo_url -->
-      <!-- </div>
-    </a>
-    
-  
-      
-      <a href="/2015/07/31/akka-dotnet-experiences.html" class="post-excerpt">
-      <div class="padded-content">
-        <div class="title">Akka.net Experiences</div>
         
-          
-            <info datetime="">
-              Jul 2015
-            </info>
             
-          
-          
-          
-            <span class="body">The actor model is the new cool in the .Net world. The concept as such is more than 40 years old and on other platforms there are actor model implementations widely used.
-
-</span>
-          
-          
-          <!-- post.photo_url -->
-      <!-- </div>
-    </a>
-    
-  
-      
-      <a href="/2015/06/17/future-web-applications.html" class="post-excerpt">
-      <div class="padded-content">
-        <div class="title">The Future of Web Applications</div>
         
-          
-            <info datetime="">
-              Jun 2015
-            </info>
             
-          
-          
-          
-            <span class="body">Have pure web applications a future in view of mobile apps? Let’s investigate.
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+                    <div class="mdl-card__title" >
 
-</span>
-          
-          
-          <!-- post.photo_url -->
-      <!-- </div>
-    </a>
-    
-  
-      
-      <a href="/2015/05/20/agile-development.html" class="post-excerpt">
-      <div class="padded-content">
-        <div class="title">Agile Development</div>
+                    </div>
+                    <div><h2 class="mdl-card__title-text">Self-Publishing vs Traditional Publishing</h2></div>
+                    <div class="mdl-card__supporting-text">
+                        <span>Sep 3, 2016</span>
+                        <p><p><strong>My experiences with self-publishing a book and a traditional publisher. It is not always as it appears at first sight.</strong></p>
+
+</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="/2016/09/03/self-publishing.html">
+                            Read More
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2016/09/03/self-publishing">
+                            <i class="material-icons">share</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2016/09/03/self-publishing">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=1002114183266010&display=page&href=https://kujua.github.io/2016/09/03/self-publishing.html&quote=New blog post: Self-Publishing vs Traditional Publishing"
+                                   class="mdl-menu__item">Facebook</a></li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/share?text=New blog post: Self-Publishing vs Traditional Publishing&url=https://kujua.github.io/2016/09/03/self-publishing.html&hashtags=selfpub&via=wolfgang_loder"
+                                   class="mdl-menu__item">Twitter</a></li>
+                            <!--<li><a target="_blank" href="https://plus.google.com/share?url=/2016/09/03/self-publishing.html"-->
+                                   <!--class="mdl-menu__item">Google+</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            
         
-          
-            <info datetime="">
-              May 2015
-            </info>
             
-              <info>
-                <div>  (updated: Jun 2015)</div>
-              </info>
-            
-          
-          
-          
-            <span class="body">During my career as a contractor I had many technical interviews. this post is not about the interviews, but about one aspect that changed over time: development process paradigm.
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+                    <div class="mdl-card__title"  style="background: url('/res/wrapper_erlang_title.png') center/cover;" >
 
-</span>
-          
-          
-          <!-- post.photo_url -->
-      <!-- </div>
-    </a>
-    
-  
-      
-      <a href="/2015/04/19/container-solutions.html" class="post-excerpt">
-      <div class="padded-content">
-        <div class="title">Container solutions - a trial</div>
+                    </div>
+                    <div><h2 class="mdl-card__title-text">Publishing a book on Leanpub</h2></div>
+                    <div class="mdl-card__supporting-text">
+                        <span>Sep 1, 2016</span>
+                        <p><p><strong>A few days ago I published my first book on Leanpub. Overall, it was a very good experience with no major problems.</strong></p>
+
+</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="/2016/09/01/book-leanpub-scrivener.html">
+                            Read More
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2016/09/01/book-leanpub-scrivener">
+                            <i class="material-icons">share</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2016/09/01/book-leanpub-scrivener">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=1002114183266010&display=page&href=https://kujua.github.io/2016/09/01/book-leanpub-scrivener.html&quote=New blog post: Publishing a book on Leanpub"
+                                   class="mdl-menu__item">Facebook</a></li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/share?text=New blog post: Publishing a book on Leanpub&url=https://kujua.github.io/2016/09/01/book-leanpub-scrivener.html&hashtags=&via=wolfgang_loder"
+                                   class="mdl-menu__item">Twitter</a></li>
+                            <!--<li><a target="_blank" href="https://plus.google.com/share?url=/2016/09/01/book-leanpub-scrivener.html"-->
+                                   <!--class="mdl-menu__item">Google+</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            
         
-          
-            <info datetime="">
-              Apr 2015
-            </info>
             
-          
-          
-            <div class="grid-image-wrapper" style="background-image:url('/res/container_1504.jpg');"></div>
-            
-              <span class="photocredit_small">Photo Credit: Glyn Lowe Photoworks (flickr.com/photos/glynlowe)</span>
-              </br>
-            
-          
-          
-            <span class="body">The idea of containers is very compelling. We get rid of heavy virtual machines and just serve lightweight application files.
-
-</span>
-          
-          
-          <!-- post.photo_url -->
-      <!-- </div>
-    </a>
-    
-  
-      
-      <a href="/2015/04/10/technical-debt.html" class="post-excerpt">
-      <div class="padded-content">
-        <div class="title">Technical Debt</div>
         
-          
-            <info datetime="">
-              Apr 2015
-            </info>
             
-          
-          
-          
-            <span class="body">The topic of technical debt in software development comes up regularly in blog posts, podcasts or talks. I am highlighting some of the practical experiences in trying to reduce technical debt.
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+                    <div class="mdl-card__title" >
 
-</span>
-          
-          
-          <!-- post.photo_url -->
-      <!-- </div>
-    </a>
-    
-  
-  <div class="breaker"></div> --> -->
-  <!-- <div class="end">
-    <a href="/archive/">More...</a>
-  </div> -->
-  </div>
-</div>
-<!-- <script type="text/javascript">
-(function(f){
-  var onload = function(f) {
-    if (window.addEventListener) {
-      window.addEventListener('DOMContentLoaded', f, false);
-    } else {
-      window.attachEvent('onload', f);
-    }
-  };
-  onload(function(){
-    f();
-    if (window.addEventListener) {
-      window.addEventListener('resize', f, false);
-    } else {
-      window.attachEvent('resize', f);
-    }
-  });
-})(function(){
-  var winw = window.innerWidth, w; //, width_thresholds = [680, 780];
-  w = window.__post_grid_width;
+                    </div>
+                    <div><h2 class="mdl-card__title-text">Windows 10 - First Impressions</h2></div>
+                    <div class="mdl-card__supporting-text">
+                        <span>Sep 12, 2015</span>
+                        <p><p><strong>Windows 10 finally arrived on my developer machine. Read here about the first impressions with the “RTM” version.</strong></p>
 
-  if ( (w !== undefined) &&
-    ( (w === 680 && winw < 680) ||
-    (w === 780 && winw >= 680 && winw < 780) ||
-    (w === 10000 && winw >= 780)
-  )
-)
-{
-  // console.log('noop w:', w+ ', winw:', winw);
-  return;
-} else {
-  window.__post_grid_width = w =
-  winw > 780 ? 10000 :
-  winw > 680 ? 780 :
-  680;
-  // console.log('op w:', w);
-}
+</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="/2015/09/12/windows-10-first-impressions.html">
+                            Read More
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/09/12/windows-10-first-impressions">
+                            <i class="material-icons">share</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/09/12/windows-10-first-impressions">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=1002114183266010&display=page&href=https://kujua.github.io/2015/09/12/windows-10-first-impressions.html&quote=New blog post: Windows 10 - First Impressions"
+                                   class="mdl-menu__item">Facebook</a></li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/share?text=New blog post: Windows 10 - First Impressions&url=https://kujua.github.io/2015/09/12/windows-10-first-impressions.html&hashtags=&via=wolfgang_loder"
+                                   class="mdl-menu__item">Twitter</a></li>
+                            <!--<li><a target="_blank" href="https://plus.google.com/share?url=/2015/09/12/windows-10-first-impressions.html"-->
+                                   <!--class="mdl-menu__item">Google+</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+                    <div class="mdl-card__title" >
 
-var posts = document.getElementById('recent-posts');
-var child_nodes = posts.childNodes, k, node, h,
-col_width, col0_y, col1_y, col1_x,
-origin = {x:0, y:0}, node_count = 0, is_col0, row0_max_y;
+                    </div>
+                    <div><h2 class="mdl-card__title-text">Akka.net Experiences</h2></div>
+                    <div class="mdl-card__supporting-text">
+                        <span>Jul 31, 2015</span>
+                        <p><p><strong>The actor model is the new cool in the .Net world. The concept as such is more than 40 years old and widely used.</strong></p>
 
-posts.style.position = (window.__post_grid_width <= 680) ? null : 'relative';
+</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="/2015/07/31/akka-dotnet-experiences.html">
+                            Read More
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/07/31/akka-dotnet-experiences">
+                            <i class="material-icons">share</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/07/31/akka-dotnet-experiences">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=1002114183266010&display=page&href=https://kujua.github.io/2015/07/31/akka-dotnet-experiences.html&quote=New blog post: Akka.net Experiences"
+                                   class="mdl-menu__item">Facebook</a></li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/share?text=New blog post: Akka.net Experiences&url=https://kujua.github.io/2015/07/31/akka-dotnet-experiences.html&hashtags=&via=wolfgang_loder"
+                                   class="mdl-menu__item">Twitter</a></li>
+                            <!--<li><a target="_blank" href="https://plus.google.com/share?url=/2015/07/31/akka-dotnet-experiences.html"-->
+                                   <!--class="mdl-menu__item">Google+</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+                    <div class="mdl-card__title" >
 
-for (k in child_nodes) {
-  node = child_nodes[k];
-  if (node.nodeType === Node.ELEMENT_NODE) {
-    if (node.className === 'breaker') {
-      if (window.__post_grid_width <= 680) {
-        node.style.height = null;
-      } else {
-        node.style.height = (Math.max(col0_y, col1_y) - row0_max_y) + 'px';
-      }
-      break;
-    }
-    if (col0_y === undefined) {
-      origin.x = node.offsetLeft;
-      origin.y = node.offsetTop;
-      col_width = node.clientWidth;
-      col0_y = origin.y + node.clientHeight;
-      row0_max_y = col0_y;
-    } else {
-      if (col1_y === undefined) {
-        col1_y = origin.y + node.clientHeight;
-        col1_x = origin.x + node.clientWidth;
-        if (col1_y > row0_max_y) {
-          row0_max_y = col1_y;
-        }
-      } else {
-        if (window.__post_grid_width <= 680) {
-          // console.log('Clear');
-          node.style.position = null;
-          node.style.width = null;
-          node.style.left = null;
-          node.style.top = null;
-        } else {
-          is_col0 = (node_count % 2) === 0;
-          node.style.position = 'absolute';
-          node.style.width = col_width + 'px';
-          if (is_col0) {
-            node.style.left = origin.x + 'px';
-            node.style.top = col0_y + 'px';
-            col0_y += node.clientHeight;
-          } else {
-            node.style.left = col1_x + 'px';
-            node.style.top = col1_y + 'px';
-            col1_y += node.clientHeight;
-          }
-        }
-        // console.dir(node);
-      }
-    }
-    ++node_count;
-  }
-}
+                    </div>
+                    <div><h2 class="mdl-card__title-text">The Future of Web Applications</h2></div>
+                    <div class="mdl-card__supporting-text">
+                        <span>Jun 17, 2015</span>
+                        <p><p><strong>Have pure web applications a future in view of mobile apps or will they slowly disppear? Let’s investigate.</strong></p>
 
-});
-</script> -->
+</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="/2015/06/17/future-web-applications.html">
+                            Read More
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/06/17/future-web-applications">
+                            <i class="material-icons">share</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/06/17/future-web-applications">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=1002114183266010&display=page&href=https://kujua.github.io/2015/06/17/future-web-applications.html&quote=New blog post: The Future of Web Applications"
+                                   class="mdl-menu__item">Facebook</a></li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/share?text=New blog post: The Future of Web Applications&url=https://kujua.github.io/2015/06/17/future-web-applications.html&hashtags=&via=wolfgang_loder"
+                                   class="mdl-menu__item">Twitter</a></li>
+                            <!--<li><a target="_blank" href="https://plus.google.com/share?url=/2015/06/17/future-web-applications.html"-->
+                                   <!--class="mdl-menu__item">Google+</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+                    <div class="mdl-card__title" >
 
-      <!-- <footer class="mdl-mini-footer">
-  <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">
-      <p>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />All blog posts are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons 4.0 International License (NC,ND)</a>.
-        </br>
-        Blog code and markup based on <a href="http://rsms.me">Rasmus Andersson's Blog</a> (<a href="https://github.com/rsms/rsms.github.com">Source</a>)
-         - <a href="https://github.com/kujua/kujua.github.io">Source of this blog on GitHub</a>
-        </br>
-        All photos by Wolfgang Loder unless specified otherwise.</br>All photos licensed under Creative Commons with Commercial Use unless specified otherwise.
-      </p>
+                    </div>
+                    <div><h2 class="mdl-card__title-text">Agile Development</h2></div>
+                    <div class="mdl-card__supporting-text">
+                        <span>May 20, 2015</span>
+                        <p><p><strong>During my career I had many technical interviews. This post is about one aspect that changed over time: development process paradigm.</strong></p>
+
+</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="/2015/05/20/agile-development.html">
+                            Read More
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/05/20/agile-development">
+                            <i class="material-icons">share</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/05/20/agile-development">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=1002114183266010&display=page&href=https://kujua.github.io/2015/05/20/agile-development.html&quote=New blog post: Agile Development"
+                                   class="mdl-menu__item">Facebook</a></li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/share?text=New blog post: Agile Development&url=https://kujua.github.io/2015/05/20/agile-development.html&hashtags=&via=wolfgang_loder"
+                                   class="mdl-menu__item">Twitter</a></li>
+                            <!--<li><a target="_blank" href="https://plus.google.com/share?url=/2015/05/20/agile-development.html"-->
+                                   <!--class="mdl-menu__item">Google+</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+                    <div class="mdl-card__title"  style="background: url('/res/container_1504.jpg') center/cover;" >
+
+                    </div>
+                    <div><h2 class="mdl-card__title-text">Container solutions - a trial</h2></div>
+                    <div class="mdl-card__supporting-text">
+                        <span>Apr 19, 2015</span>
+                        <p><p><strong>The idea of containers is very compelling. We get rid of heavy virtual machines and just serve lightweight application files.</strong></p>
+
+</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="/2015/04/19/container-solutions.html">
+                            Read More
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/04/19/container-solutions">
+                            <i class="material-icons">share</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/04/19/container-solutions">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=1002114183266010&display=page&href=https://kujua.github.io/2015/04/19/container-solutions.html&quote=New blog post: Container solutions - a trial"
+                                   class="mdl-menu__item">Facebook</a></li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/share?text=New blog post: Container solutions - a trial&url=https://kujua.github.io/2015/04/19/container-solutions.html&hashtags=&via=wolfgang_loder"
+                                   class="mdl-menu__item">Twitter</a></li>
+                            <!--<li><a target="_blank" href="https://plus.google.com/share?url=/2015/04/19/container-solutions.html"-->
+                                   <!--class="mdl-menu__item">Google+</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+                    <div class="mdl-card__title" >
+
+                    </div>
+                    <div><h2 class="mdl-card__title-text">Technical Debt</h2></div>
+                    <div class="mdl-card__supporting-text">
+                        <span>Apr 10, 2015</span>
+                        <p><p><strong>The topic of technical debt in software development comes up regularly. I am highlighting my experiences in trying to reduce technical debt.</strong></p>
+
+</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="/2015/04/10/technical-debt.html">
+                            Read More
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-/2015/04/10/technical-debt">
+                            <i class="material-icons">share</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-/2015/04/10/technical-debt">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=1002114183266010&display=page&href=https://kujua.github.io/2015/04/10/technical-debt.html&quote=New blog post: Technical Debt"
+                                   class="mdl-menu__item">Facebook</a></li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/share?text=New blog post: Technical Debt&url=https://kujua.github.io/2015/04/10/technical-debt.html&hashtags=&via=wolfgang_loder"
+                                   class="mdl-menu__item">Twitter</a></li>
+                            <!--<li><a target="_blank" href="https://plus.google.com/share?url=/2015/04/10/technical-debt.html"-->
+                                   <!--class="mdl-menu__item">Google+</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            
+        
     </div>
-    <ul class="mdl-mini-footer__link-list">
-      <li><a href="#">Help</a></li>
-      <li><a href="#">Privacy and Terms</a></li>
-      <li><a href="#">User Agreement</a></li>
-    </ul>
-  </div>
-  <div class="mdl-mini-footer__right-section">
-    <button class="mdl-mini-footer__social-btn"></button>
-    <button class="mdl-mini-footer__social-btn"></button>
-    <button class="mdl-mini-footer__social-btn"></button>
-  </div>
-</footer> -->
-<footer class="mdl-mega-footer">
-  <div class="mdl-mega-footer--middle-section">
+</div>
+    <footer class="mdl-mega-footer">
+    <div class="mdl-mega-footer--middle-section">
 
-    <div class="mdl-mega-footer--drop-down-section">
-      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">INFO</h1>
-      <ul class="mdl-mega-footer--link-list">
-        <li><a href="mailto:"></a></li>
-        <li><a href=" /feed.xml ">subscribe via RSS</a></li>
-      </ul>
+        <div class="mdl-mega-footer--drop-down-section">
+            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer--heading">INFO</h1>
+            <ul class="mdl-mega-footer--link-list">
+                <li><a href="mailto:kujuasiokubahatisha@gmail.com">kujuasiokubahatisha@gmail.com</a></li>
+                <li><a href="http://kujuahub.com" target="_blank">kujuahub.com</a></li>
+            </ul>
+        </div>
+
+        <div class="mdl-mega-footer--drop-down-section">
+            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer--heading">SOCIAL</h1>
+            <ul class="mdl-mega-footer--link-list">
+                <li>
+                    <a href="https://github.com/kujua">
+                        <span class="icon  icon--github">
+                          <svg viewBox="0 0 16 16">
+                            <path fill="#828282"
+                                  d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                          </svg>
+                        </span>
+                        <span class="username">kujua</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/wolfgang_loder">
+                        <span class="icon  icon--twitter">
+                          <svg viewBox="0 0 16 16">
+                            <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                            c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                          </svg>
+                        </span>
+                        <span class="username">wolfgang_loder</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mdl-mega-footer--drop-down-section">
+            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer--heading">ABOUT</h1>
+            <ul class="mdl-mega-footer--link-list">
+                <li>Technology Blog by Wolfgang Loder. Software development technologies and methods covered amongst others: Elixir, Elm. .NET, C#, Functional Programming, Machine Learning
+</li>
+            </ul>
+        </div>
+
+
     </div>
 
-    <div class="mdl-mega-footer--drop-down-section">
-      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">SOCIAL</h1>
-      <ul class="mdl-mega-footer--link-list">
-        
-        
-	  
-      
-	  
-
-      </ul>
+    <div class="mdl-mega-footer--bottom-section">
+        <ul class="mdl-mega-footer--link-list">
+            <li><a href="http://kujuahub.com" target="_blank">Impressum</a></li>
+            <li><a href="http://kujuahub.com" target="_blank">Privacy & Terms</a></li>
+        </ul>
     </div>
-
-    <div class="mdl-mega-footer--drop-down-section">
-      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">ABOUT</h1>
-      <ul class="mdl-mega-footer--link-list">
-        <li></li>
-      </ul>
-    </div>
-
-
-  </div>
-
-  <div class="mdl-mega-footer--bottom-section">
-    <div class="mdl-logo"></div>
-    <ul class="mdl-mega-footer--link-list">
-      <li><a href="#">Help</a></li>
-      <li><a href="#">Privacy & Terms</a></li>
-    </ul>
-  </div>
 
 </footer>
 
-    </div>
-  </body>
+</div>
+</body>
 </html>

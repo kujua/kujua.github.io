@@ -8,7 +8,7 @@ disqus_comments: 1
 disqus_identifier: 2015-07-31-akkadotnet-experiences
 ---
 
-**The actor model is the new cool in the .Net world. The concept as such is more than 40 years old and on other platforms there are actor model implementations widely used.**
+**The actor model is the new cool in the .Net world. The concept as such is more than 40 years old and widely used.** 
 
 Programming with the actor model is not difficult, but we always have to keep in our minds that everything we do in this model is asynchronous. Usually, web applications in .Net were written in a pure synchronous way: a request comes in, the request is handled on the server, a response is sent back to the client. If the processing takes to long, the connection between the client and the server times out.
 

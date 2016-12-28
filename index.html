@@ -2,206 +2,70 @@
 title: Wolfgang Loder - Technical Blog
 layout: default
 ---
-<!-- {% assign tutorials = (site.pages | where: "layout" , "java-tutorials") %}
-{% for page in tutorials %}
-// do some work
-{% endfor %} -->
-<!-- <div class="col-second">
-  {% include sidebar.html %}
-</div> -->
-<!-- <div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col" style="background-color: white;">
-    1
-  </div>
-  <div class="mdl-cell mdl-cell--4-col" style="background-color: white;">
-    2
-  </div>
-  <div class="mdl-cell mdl-cell--2-col" style="background-color: green;">
-    3
-  </div> -->
- <div class="mdl-grid">
-   <div class="mdl-cell mdl-cell--6-col" style="background-color: green">
-     ...
-   </div>
-   <div class="mdl-cell mdl-cell--6-col" style="background-color: blue">
-     ...
-   </div>
-   <!-- <div class="mdl-cell mdl-cell--3-col">
-     ...
-   </div>
-   <div class="mdl-cell mdl-cell--3-col">
-     ...
-   </div> -->
-   {% assign sorted_posts = (site.posts | sort: 'sortorder') %}
-   {% for post in sorted_posts limit:25 %}
-     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-        <div class="mdl-card__title" {% if post.image %} style="background: url('{{ post.image }}') center/cover;" {% endif %}>
-          <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+
+<div class="page-content">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--6-col mdl-shadow--2dp" style="background-color: whitesmoke">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col">
+                    <img src="res/erlangapress.jpg" alt="Erlang and Elixir for Imperative Programmers" height="258px" width="181px"/>
+                </div>
+                <div class="mdl-cell mdl-cell--8-col" style="padding-left: 10px;">
+                    <div class="mdl-card__title-text">Available now !</div>
+                    <div class="mdl-card__supporting-text">
+                        <p>This book </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="mdl-card__supporting-text">
-          <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-          <p>{{ post.excerpt }}</p>
+        <div class="mdl-cell mdl-cell--6-col mdl-shadow--2dp" style="background-color: whitesmoke">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col">
+                    <img src="res/elmapress.jpg" alt="Web Applications with Elm" height="258px" width="185px"/>
+                </div>
+                <div class="mdl-cell mdl-cell--8-col" style="padding-left: 10px;">
+                    <p>Text here...</p>
+                    <p>Text here...</p>
+                    <p>Text here...</p>
+                </div>
+            </div>
         </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">
-            Read More
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-{{ post.id }}">
-            <i class="material-icons">share</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-{{ post.id }}">
-            <li><a href="https://www.facebook.com/dialog/share?app_id={{site.facebook_app_id}}&display=page&href={{ post.url | prepend: site.baseurl }}&redirect_uri={{ site.baseurl }}" class="mdl-menu__item">Facebook</a></li>
-            <li><a href="https://twitter.com/share?url={{ post.url | prepend: site.baseurl }}&text={{ post.title }}&via={{ site.twitter_username }}" class="mdl-menu__item">Twitter</a></li>
-            <li><a href="https://plus.google.com/share?url={{ post.url | prepend: site.baseurl }}" class="mdl-menu__item">Google+</a></li>
-          </ul>
-        </div>
-      </div>
-      {% endfor %}
-   </div>
-  <!-- <div class="content full-bleed" id="recent-posts">
-    {% assign sorted_posts = (site.posts | sort: 'sortorder') %}
-    {% for post in sorted_posts limit:25 %}
-      {% unless post.ignoreall == 1 %}
-      <a href="{{ post.url }}" class="post-excerpt{% if post.photo_url %} photo{% endif %}">
-      <div class="padded-content">
-        <div class="title">{{ post.title }}</div>
-        {% if post.photo_url %}
-          <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
-        {% else %}
-          {% unless post.ignoredate == 1 %}
-            <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
-              {{ post.date | date: "%b %Y" }}
-            </info>
-            {% if post.updated %}
-              <info>
-                <div>  (updated: {{ post.updated | date: "%b %Y" }})</div>
-              </info>
-            {% endif %}
-          {% endunless %}
-          {% if post.photo-front-url %}
-            <div class="{{post.photo-front-class}}" style="background-image:url('{{ post.photo-front-url }}');"></div>
-            {% if post.photo-credit %}
-              <span class="photocredit_small">Photo Credit: {{post.photo-front-credit}} ({{post.photo-front-credit-link}})</span>
-              </br>
-            {% endif %}
-          {% endif %}
-          {% if post.description %}
-            <span class="body">{{ post.description | strip_html }}</span>
-          {% else %}
-            <span class="body">{{ post.excerpt | strip_html }}</span>
-          {% endif %}
-          {% if post.photo-end-url %}
-            <div class="{{post.photo-end-class}}" style="background-image:url('{{ post.photo-end-url }}');"></div>
-          {% endif %}
-          {% endif %}<!-- post.photo_url -->
-      <!-- </div>
-    </a>
-    {% endunless %}
-  {% endfor %}
-  <div class="breaker"></div> --> -->
-  <!-- <div class="end">
-    <a href="/archive/">More...</a>
-  </div> -->
-  </div>
+
+        {% assign sorted_posts = (site.posts | sort: 'sortorder') %}
+        {% for post in sorted_posts limit:12 %}
+            {% unless post.ignoreall == 1 %}
+                <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+                    <div class="mdl-card__title" {% if post.photo-front-url %} style="background: url('{{ post.photo-front-url }}') center/cover;" {% endif %}>
+
+                    </div>
+                    <div><h2 class="mdl-card__title-text">{{ post.title }}</h2></div>
+                    <div class="mdl-card__supporting-text">
+                        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                        <p>{{ post.excerpt }}</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href="{{ post.url | prepend: site.baseurl }}">
+                            Read More
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-{{ post.id }}">
+                            <i class="material-icons">share</i>
+                        </button>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-{{ post.id }}">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/dialog/share?app_id={{site.facebook_app_id}}&display=page&href=https://{{ site.url }}{{ post.url }}&quote=New blog post: {{ post.title }}"
+                                   class="mdl-menu__item">Facebook</a></li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/share?text=New blog post: {{ post.title }}&url=https://{{ site.url }}{{ post.url }}&hashtags={{post.hashtag1}}&via={{ site.twitter_username }}"
+                                   class="mdl-menu__item">Twitter</a></li>
+                            <!--<li><a target="_blank" href="https://plus.google.com/share?url={{ post.url | prepend: site.baseurl }}"-->
+                                   <!--class="mdl-menu__item">Google+</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            {% endunless %}
+        {% endfor %}
+    </div>
 </div>
-<!-- <script type="text/javascript">
-(function(f){
-  var onload = function(f) {
-    if (window.addEventListener) {
-      window.addEventListener('DOMContentLoaded', f, false);
-    } else {
-      window.attachEvent('onload', f);
-    }
-  };
-  onload(function(){
-    f();
-    if (window.addEventListener) {
-      window.addEventListener('resize', f, false);
-    } else {
-      window.attachEvent('resize', f);
-    }
-  });
-})(function(){
-  var winw = window.innerWidth, w; //, width_thresholds = [680, 780];
-  w = window.__post_grid_width;
-
-  if ( (w !== undefined) &&
-    ( (w === 680 && winw < 680) ||
-    (w === 780 && winw >= 680 && winw < 780) ||
-    (w === 10000 && winw >= 780)
-  )
-)
-{
-  // console.log('noop w:', w+ ', winw:', winw);
-  return;
-} else {
-  window.__post_grid_width = w =
-  winw > 780 ? 10000 :
-  winw > 680 ? 780 :
-  680;
-  // console.log('op w:', w);
-}
-
-var posts = document.getElementById('recent-posts');
-var child_nodes = posts.childNodes, k, node, h,
-col_width, col0_y, col1_y, col1_x,
-origin = {x:0, y:0}, node_count = 0, is_col0, row0_max_y;
-
-posts.style.position = (window.__post_grid_width <= 680) ? null : 'relative';
-
-for (k in child_nodes) {
-  node = child_nodes[k];
-  if (node.nodeType === Node.ELEMENT_NODE) {
-    if (node.className === 'breaker') {
-      if (window.__post_grid_width <= 680) {
-        node.style.height = null;
-      } else {
-        node.style.height = (Math.max(col0_y, col1_y) - row0_max_y) + 'px';
-      }
-      break;
-    }
-    if (col0_y === undefined) {
-      origin.x = node.offsetLeft;
-      origin.y = node.offsetTop;
-      col_width = node.clientWidth;
-      col0_y = origin.y + node.clientHeight;
-      row0_max_y = col0_y;
-    } else {
-      if (col1_y === undefined) {
-        col1_y = origin.y + node.clientHeight;
-        col1_x = origin.x + node.clientWidth;
-        if (col1_y > row0_max_y) {
-          row0_max_y = col1_y;
-        }
-      } else {
-        if (window.__post_grid_width <= 680) {
-          // console.log('Clear');
-          node.style.position = null;
-          node.style.width = null;
-          node.style.left = null;
-          node.style.top = null;
-        } else {
-          is_col0 = (node_count % 2) === 0;
-          node.style.position = 'absolute';
-          node.style.width = col_width + 'px';
-          if (is_col0) {
-            node.style.left = origin.x + 'px';
-            node.style.top = col0_y + 'px';
-            col0_y += node.clientHeight;
-          } else {
-            node.style.left = col1_x + 'px';
-            node.style.top = col1_y + 'px';
-            col1_y += node.clientHeight;
-          }
-        }
-        // console.dir(node);
-      }
-    }
-    ++node_count;
-  }
-}
-
-});
-</script> -->

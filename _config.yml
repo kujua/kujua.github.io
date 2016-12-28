@@ -1,2 +1,20 @@
 gems:
   - jekyll-feed
+
+description: >
+  Technology Blog by Wolfgang Loder. Software development technologies and methods covered amongst others:
+  Elixir, Elm. .NET, C#, Functional Programming, Machine Learning
+
+twitter_username: wolfgang_loder
+
+github_username:  kujua
+
+email: kujuasiokubahatisha@gmail.com
+
+web: kujuahub.com
+
+baseurl: ""
+
+url: kujua.github.io
+
+facebook_app_id: 1002114183266010
