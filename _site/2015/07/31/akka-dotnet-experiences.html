@@ -72,7 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <p>It is very important to use immutable messages for communication with and between actors. I opt for a simple message structure with a hash or dictionary as the main transport for business domain values. The reason for this is to avoid serialization and deserialization problems and enhance performance. Also, updates can be done without breaking existing actor versions. An actor just takes out from the hash what it needs for processing the data and leaves the rest alone.</p>
 
-<p><img src="/res/actormodel-generic.jpg" alt="Actor Messaging" /></p>
+<p><img src="kujua.github.io/res/actormodel-generic.jpg" alt="Actor Messaging" /></p>
 
 <p>A tricky part is actor-to-actor communication regarding response messages. There are two options:</p>
 
@@ -87,7 +87,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <p>Normally actors are grouped by the business process they support. In my designs for business apps there always exists a supervisor, which is a normal actor and distributes the work to other actors in the group. The supervisor is the only actor that knows the business process and handles errors and other responses from the other actors in the group.</p>
 
-<p><img src="/res/actormodel-supervisor.jpg" alt="Supervisor Hierarchy" /></p>
+<p><img src="kujua.github.io/res/actormodel-supervisor.jpg" alt="Supervisor Hierarchy" /></p>
 
 <p>It is also possible to create supervisors for each user of an application and keep the state of this user in the actor. Microsoft’s <em>Halo</em> implementation used this approach for multiplayer games, although with their own actor model implementation <em>Orleans</em>.</p>
 
