@@ -1,40 +1,55 @@
 ---
 layout: default
 ---
-<div class="content{% if page.photo_url %} photo-post{% endif %}">
-  <div class="post single">
-    {% unless page.photo_url %}
-      <h1>{{ page.title }}</h1>
-      {% unless page.ignoredate == 1 %}
-        <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
-          {{ page.date | date: "%b %d, %Y" }}
-        </info>
-        {% if page.updated %}
-          <info>
-            <div>  (updated: {{ page.updated | date: "%b %d, %Y" }})</div>
-          </info>
-        {% endif %}
-      {% endunless %}
-    {% endunless %}
-    <div class="body">{{ content }}</div>
-    <!-- <div class="breaker"></div> -->
-    <div class="breaker"></div>
-
-      {% if page.disqus_comments %}
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-           /* * * CONFIGURATION VARIABLES * * */
-           var disqus_shortname = 'technicalblogkujua';
-           var disqus_identifier = '{{page.disqus_identifier}}';
-           /* * * DON'T EDIT BELOW THIS LINE * * */
-           (function() {
-               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-               dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-           })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-      {% endif %}
-
-  </div>
+<div class="post-ribbon" style="padding-left: 20px;padding-top: 20px;">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+       href="/">
+        Back to Article List
+    </a>
 </div>
+<main class="post-main mdl-layout__content">
+    <div class="post-container mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class=" post-section mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col content{% if page.photo_url %} photo-post{% endif %}">
+            <div class="post single">
+                {% unless page.photo_url %}
+                    <h2>{{ page.title }}</h2>
+                    {% unless page.ignoredate == 1 %}
+                        <info datetime="{{ page.date | date: " %Y-%m-%d
+                        " }}">
+                        {{ page.date | date: "%b %d, %Y" }}
+                        </info>
+                        {% if page.updated %}
+                            <info>
+                                <div> (updated: {{ page.updated | date: "%b %d, %Y" }})</div>
+                            </info>
+                        {% endif %}
+                    {% endunless %}
+                {% endunless %}
+                <div class="body">{{ content }}</div>
+                <!-- <div class="breaker"></div> -->
+                <div class="breaker"></div>
+
+                {% if page.disqus_comments %}
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'technicalblogkujua';
+                    var disqus_identifier = '{{page.disqus_identifier}}';
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function () {
+                      var dsq = document.createElement('script');
+                      dsq.type = 'text/javascript';
+                      dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+                    powered by Disqus.</a></noscript>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</main>

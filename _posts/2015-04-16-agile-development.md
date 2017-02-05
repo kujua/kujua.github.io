@@ -8,7 +8,7 @@ disqus_comments: 1
 disqus_identifier: 2015-05-20-agile-development
 ---
 
-During my career as a contractor I had many technical interviews. this post is not about the interviews, but about one aspect that changed over time: development process paradigm.
+**During my career I had many technical interviews. This post is about one aspect that changed over time: development process paradigm.**
 
 Twenty years ago nobody was asking about methodologies. It was assumed that the project runs a waterfall process and nothing else was considered, at least not in the enterprise world with Microsoft technology. Around the millenium change I heard more questions about the Unified Process. I remember that I was warned about the question once and the evening before the interview I tried to get more information about it. At that time the internet was not as rich as it is today, so I was lucky to find some information in one of the books I owned.
 

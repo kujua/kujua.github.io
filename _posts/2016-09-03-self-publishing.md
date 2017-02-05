@@ -3,12 +3,14 @@ layout: post
 title: Self-Publishing vs Traditional Publishing
 sortorder: 4066
 date: 2016-09-03
+updated: Dec 26 2016
 ignoredate: 0
 disqus_comments: 1
 disqus_identifier: 2016-09-03-self-publishing
+hashtag1: selfpub
 ---
 
-**My experiences with self-publishing a book and a traditional publisher.**
+**My experiences with self-publishing a book and a traditional publisher. It is not always as it appears at first sight.**
 
 Mid August 2016 I published my book *Erlang and Elixir for Imperative Programmers*. I have written about the experience in [another blog entry]({% post_url 2016-09-01-book-leanpub-scrivener %}). About a week after publishing the finished book, a traditional publisher whose name shall not be revealed approached me.
 

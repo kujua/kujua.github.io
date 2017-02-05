@@ -7,7 +7,7 @@ disqus_comments: 1
 disqus_identifier: 2015-04-10-technical-debt
 ---
 
-**The topic of technical debt in software development comes up regularly in blog posts, podcasts or talks. I am highlighting some of the practical experiences in trying to reduce technical debt.**
+**The topic of technical debt in software development comes up regularly. I am highlighting my experiences in trying to reduce technical debt.**
 
 I am not going to define technical debt. There are lots of definitions and developers and management always seem to embrace the one that goes well with their specific situation.
 
