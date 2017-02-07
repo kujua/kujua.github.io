@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Book - Erlang and Elixir for imperative programmers
-photo-front-url: /res/wrapper_erlang_title.png
+photo-front-url: /res/blog-erlang-card.jpg
 photo-front-class: grid-image-wrapper-square
 sortorder: 10
 ignoredate: 1

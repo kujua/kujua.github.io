@@ -3,8 +3,9 @@ layout: post
 title: Publishing a book on Leanpub
 sortorder: 4068
 date: 2016-09-01
+updated: Jan 5 2017
 ignoredate: 0
-photo-front-url: /res/wrapper_erlang_title.png
+photo-front-url: /res/blog-erlang-card.jpg
 photo-front-class: grid-image-wrapper-square
 disqus_comments: 1
 disqus_identifier: 2016-09-01-leanpub-scrivener
@@ -15,7 +16,7 @@ ignoreall: 0
 
 [Leanpub](https://leanpub.com) is a self-publishing platform that encourages *lean* publishing: Even if the book is not finished it should be made available to potential readers and buyers. It is like a kickstarter book project where readers support the writing of a book, not knowing if they will ever get a finished product.
 
-It is a good idea to publish the book in its infant state, but there are pitfalls as well. I published the first chapters of the [Erlang/Elixir book](https://leanpub.com/erlangandelixirforimperativeprogrammers) and then it stayed there for a long time, because I was contracted for an unexpected project and could not write. Fortunately the readers I had at that time did not demand their money back. It was a bit embarassing for me - all the time estimations I had were completely blown away.
+It is a good idea to publish the book in its infant state, but there are pitfalls as well. I published the first chapters of the book and then it stayed there for a long time, because I was contracted for an unexpected project and could not write. Fortunately the readers I had at that time did not demand their money back. It was a bit embarassing for me - all the time estimations I had were completely blown away.
 
 Estimations were also wrong, because unexpected issues can occur:
 
@@ -37,7 +38,7 @@ Let's examine my writing process a little bit more:
 
 I wrote the book on a MacBook Pro with lots of memory to have all applications I need opened including one or two virtual machines. My editor for the text is [Scrivener](https://www.literatureandlatte.com/scrivener.php) - I used it for some time now and it deserves its own blog post. For the code I used different editors, but mostly [Atom](https://atom.io/).
 
-Leanpub also provides a PDF version that can be uploaded to Amazon for offering a print-on-demand book. In fact, they encourage authors to do this once the book is 100% finished.
+Leanpub also provides a PDF version that can be uploaded to Amazon for offering a print-on-demand book. In fact, they encourage authors to do this once the book is 100% finished. In my case the publisher Apress approached me and in December 2016 the book was published by them. This means that I had to take down the book on Leanpub and it is not available there anymore.
 
 **Conclusion**
 

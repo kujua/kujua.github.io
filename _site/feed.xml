@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="kujua.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="kujua.github.io/" rel="alternate" type="text/html" /><updated>2017-02-07T11:09:31+03:00</updated><id>kujua.github.io/</id><subtitle>Technology Blog by Wolfgang Loder. Software development technologies and methods covered amongst others: Elixir, Elm. .NET, C#, Functional Programming, Machine Learning
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="kujua.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="kujua.github.io/" rel="alternate" type="text/html" /><updated>2017-02-07T14:05:52+03:00</updated><id>kujua.github.io/</id><subtitle>Technology Blog by Wolfgang Loder &lt;a href=&quot;./about&quot;&gt;(About)&lt;/a&gt;. Software development technologies and methods covered amongst others: Elixir, Elm. .NET, C#, Functional Programming, Machine Learning
 </subtitle><entry><title>Self-Publishing vs Traditional Publishing</title><link href="kujua.github.io/2016/09/03/self-publishing.html" rel="alternate" type="text/html" title="Self-Publishing vs Traditional Publishing" /><published>2016-09-03T00:00:00+03:00</published><updated>2016-09-03T00:00:00+03:00</updated><id>kujua.github.io/2016/09/03/self-publishing</id><content type="html" xml:base="kujua.github.io/2016/09/03/self-publishing.html">&lt;p&gt;&lt;strong&gt;My experiences with self-publishing a book and a traditional publisher. It is not always as it appears at first sight.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Mid August 2016 I published my book &lt;em&gt;Erlang and Elixir for Imperative Programmers&lt;/em&gt;. I have written about the experience in &lt;a href=&quot;/2016/09/01/book-leanpub-scrivener.html&quot;&gt;another blog entry&lt;/a&gt;. About a week after publishing the finished book, a traditional publisher whose name shall not be revealed approached me.&lt;/p&gt;
@@ -39,7 +39,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://leanpub.com&quot;&gt;Leanpub&lt;/a&gt; is a self-publishing platform that encourages &lt;em&gt;lean&lt;/em&gt; publishing: Even if the book is not finished it should be made available to potential readers and buyers. It is like a kickstarter book project where readers support the writing of a book, not knowing if they will ever get a finished product.&lt;/p&gt;
 
-&lt;p&gt;It is a good idea to publish the book in its infant state, but there are pitfalls as well. I published the first chapters of the &lt;a href=&quot;https://leanpub.com/erlangandelixirforimperativeprogrammers&quot;&gt;Erlang/Elixir book&lt;/a&gt; and then it stayed there for a long time, because I was contracted for an unexpected project and could not write. Fortunately the readers I had at that time did not demand their money back. It was a bit embarassing for me - all the time estimations I had were completely blown away.&lt;/p&gt;
+&lt;p&gt;It is a good idea to publish the book in its infant state, but there are pitfalls as well. I published the first chapters of the book and then it stayed there for a long time, because I was contracted for an unexpected project and could not write. Fortunately the readers I had at that time did not demand their money back. It was a bit embarassing for me - all the time estimations I had were completely blown away.&lt;/p&gt;
 
 &lt;p&gt;Estimations were also wrong, because unexpected issues can occur:&lt;/p&gt;
 
@@ -65,7 +65,7 @@
 
 &lt;p&gt;I wrote the book on a MacBook Pro with lots of memory to have all applications I need opened including one or two virtual machines. My editor for the text is &lt;a href=&quot;https://www.literatureandlatte.com/scrivener.php&quot;&gt;Scrivener&lt;/a&gt; - I used it for some time now and it deserves its own blog post. For the code I used different editors, but mostly &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Leanpub also provides a PDF version that can be uploaded to Amazon for offering a print-on-demand book. In fact, they encourage authors to do this once the book is 100% finished.&lt;/p&gt;
+&lt;p&gt;Leanpub also provides a PDF version that can be uploaded to Amazon for offering a print-on-demand book. In fact, they encourage authors to do this once the book is 100% finished. In my case the publisher Apress approached me and in December 2016 the book was published by them. This means that I had to take down the book on Leanpub and it is not available there anymore.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
 

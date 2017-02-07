@@ -2,7 +2,7 @@ gems:
   - jekyll-feed
 
 description: >
-  Technology Blog by Wolfgang Loder. Software development technologies and methods covered amongst others:
+  Technology Blog by Wolfgang Loder <a href="./about">(About)</a>. Software development technologies and methods covered amongst others:
   Elixir, Elm. .NET, C#, Functional Programming, Machine Learning
 
 twitter_username: wolfgang_loder
