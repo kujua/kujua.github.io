@@ -4,6 +4,7 @@ title: Roadmap Books
 sortorder: 4060
 date: 2016-11-19
 ignoredate: 1
+ignoreall: 1
 ---
 
 #### Planned books until end 2017
@@ -22,4 +23,4 @@ The book describes developing add-ons or packages for the editors *Atom*, *Visua
 ##### Software Engineering Series: Functional Languages - An Introduction
 
 
-##### Software Engineering Series: Functional Concepts 
+##### Software Engineering Series: Functional Concepts

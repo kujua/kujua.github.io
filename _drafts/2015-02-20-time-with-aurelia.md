@@ -3,6 +3,7 @@ layout: post
 title: Time with Aurelia
 date: 2015-05-01
 sortorder: 4090
+ignoreall: 1
 ---
 
 **The year 2015 started with the preview-release of a new Javascript framework: Aurelia. Web developers are not really dhort of frameworks, but somehow nobody is fully satisfied with the offers. I decided to take a closer look.**

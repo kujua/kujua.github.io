@@ -3,6 +3,7 @@ layout: post
 title: Author's Notes
 date: 2016-08-06
 sortorder: 4085
+ignoreall: 1
 ---
 
 **A few days ago I published the first chapters of my first book on Leanpub. This post describes my experience of writing a book.**

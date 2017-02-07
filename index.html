@@ -36,7 +36,7 @@ layout: default
         </div>
 
         {% assign sorted_posts = (site.posts | sort: 'sortorder') %}
-        {% for post in sorted_posts limit:12 %}
+        {% for post in sorted_posts limit:30 %}
             {% unless post.ignoreall == 1 %}
                 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
                     <div class="mdl-card__title" {% if post.photo-front-url %} style="background: url('{{ post.photo-front-url }}') center/cover;" {% endif %}>

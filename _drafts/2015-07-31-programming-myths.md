@@ -4,6 +4,7 @@ title: Programming Myths
 sortorder: 4082
 date: 2015-07-31
 ignoredate: 0
+ignoreall: 1
 disqus_comments: 1
 disqus_identifier: 2015-07-31-programming-myths
 ---
