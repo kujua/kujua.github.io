@@ -4,6 +4,8 @@ title: Self-Publishing vs Traditional Publishing
 sortorder: 4066
 date: 2016-09-03
 updated: Dec 26 2016
+photo-front-url: /res/blog-self-publishing-card.jpg
+photo-front-class: grid-image-wrapper-square
 ignoredate: 0
 disqus_comments: 1
 disqus_identifier: 2016-09-03-self-publishing

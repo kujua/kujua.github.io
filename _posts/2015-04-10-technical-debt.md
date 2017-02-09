@@ -3,6 +3,8 @@ layout: post
 title: Technical Debt
 date: 2015-04-10
 sortorder: 5000
+photo-front-url: /res/blog-technical-debt-card.jpg
+photo-front-class: grid-image-wrapper-square
 disqus_comments: 1
 disqus_identifier: 2015-04-10-technical-debt
 ---

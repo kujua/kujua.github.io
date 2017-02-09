@@ -4,6 +4,8 @@ title: Windows 10 - First Impressions
 sortorder: 4075
 date: 2015-09-12
 updated: 2016-1-25
+photo-front-url: /res/blog-win-10-card.jpg
+photo-front-class: grid-image-wrapper-square
 ignoredate: 0
 disqus_comments: 1
 disqus_identifier: 2015-09-12-windows10-impressions
@@ -29,7 +31,7 @@ Also, don't forget to uncheck the download option for other Microsoft products -
 
 Some applications' text renders awfully. Characters are blurry and almost unreadable. For exmple, it happened to me with Enterprise Architect. Menu text, diagram text etc. was so badly rendered that I could not work. Fortunately it is possible to fix this. In the exe-file properties dialog in the tab 'Compatibility' it is possible to uncheck 'DPI Compatibility' and after a restart of the application everything looked for me as it should be.
 
-![Properties Dialog]({{ site.url }}/res/disabledpi.jpg)
+![Properties Dialog](/res/disabledpi.jpg)
 
 I have not tried it myself, but there seems to be a problem with font rendering on high dpi monitors. A problem that begs belief after this long beta testing phase.
 
@@ -53,7 +55,7 @@ Otherwise am not really sold: searching does not really bring back my applicatio
 
 As in previous Windows versions the default settings for Explorer etc. are geared towards normal users. It is no problem to reset some of the settings, for example to display hidden files, file extensions or empty folders. What I don't like is the change in setting the explorer views for folders. I like to have the file lists sorted by date with the latest file on top. A quick click on 'Apply to all folders' helped in Windows versions pre 10. But now it says 'Apply this setting to all folders of this type'.
 
-![Folder Properties]({{ site.url }}/res/applytofolders.jpg)
+![Folder Properties](/res/applytofolders.jpg)
 
 Not only can't I see at one glance the type of the folder except seeing a different folder icon, but I have to click 'Apply' several times on different folders. If the settings are not changed again as it happened in previous versions is unknown so far.  
 

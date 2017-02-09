@@ -12,7 +12,7 @@ disqus_identifier: 2016-09-01-leanpub-scrivener
 ignoreall: 0
 ---
 
-**A few days ago I published my first book on Leanpub. Overall, it was a very good experience with no major problems.**
+**In August 2016 I published my first book on Leanpub. Overall, it was a very good experience with no major problems.**
 
 [Leanpub](https://leanpub.com) is a self-publishing platform that encourages *lean* publishing: Even if the book is not finished it should be made available to potential readers and buyers. It is like a kickstarter book project where readers support the writing of a book, not knowing if they will ever get a finished product.
 

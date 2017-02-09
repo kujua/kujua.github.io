@@ -4,6 +4,8 @@ title: Agile Development
 date: 2015-05-20
 updated: 2015-6-25
 sortorder: 4087
+photo-front-url: /res/blog-agile-card.jpg
+photo-front-class: grid-image-wrapper-square
 disqus_comments: 1
 disqus_identifier: 2015-05-20-agile-development
 ---

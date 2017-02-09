@@ -4,6 +4,8 @@ title: Akka.net Experiences
 sortorder: 4077
 date: 2015-07-31
 ignoredate: 0
+photo-front-url: /res/blog-akka-card.jpg
+photo-front-class: grid-image-wrapper-square
 disqus_comments: 1
 disqus_identifier: 2015-07-31-akkadotnet-experiences
 ---
@@ -24,7 +26,7 @@ I am doing a project with Akka for a company and - bound by an NDA - I can't say
 
 It is very important to use immutable messages for communication with and between actors. I opt for a simple message structure with a hash or dictionary as the main transport for business domain values. The reason for this is to avoid serialization and deserialization problems and enhance performance. Also, updates can be done without breaking existing actor versions. An actor just takes out from the hash what it needs for processing the data and leaves the rest alone.
 
-![Actor Messaging]({{ site.url }}/res/actormodel-generic.jpg)
+![Actor Messaging](/res/actormodel-generic.jpg)
 
 A tricky part is actor-to-actor communication regarding response messages. There are two options:
 
@@ -37,7 +39,7 @@ In any case, the second option is blocking the processing of more messages from 
 
 Normally actors are grouped by the business process they support. In my designs for business apps there always exists a supervisor, which is a normal actor and distributes the work to other actors in the group. The supervisor is the only actor that knows the business process and handles errors and other responses from the other actors in the group.
 
-![Supervisor Hierarchy]({{ site.url }}/res/actormodel-supervisor.jpg)
+![Supervisor Hierarchy](/res/actormodel-supervisor.jpg)
 
 It is also possible to create supervisors for each user of an application and keep the state of this user in the actor. Microsoft's _Halo_ implementation used this approach for multiplayer games, although with their own actor model implementation _Orleans_.
 

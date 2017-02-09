@@ -47,8 +47,16 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="header-layout-transparent mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Wolfgang Loder</span>
+        <div style="float: left; margin-right: 15px;">
+            <img src="/res/wl_face_small.jpg"/>
+        </div>
+
+        <div>
+            <span class="mdl-layout-title" style="margin-bottom: 0px;">Wolfgang Loder</span>
+            <span>
+                <a class="mdl-navigation__link aboutlink-header" href="/about">About Me</a>
+            </span>
+        </div>
         <!-- Add spacer, to align navigation to the right -->
         <!-- <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
@@ -65,35 +73,55 @@
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--6-col mdl-shadow--2dp" style="background-color: whitesmoke">
             <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--4-col">
-                    <img src="res/erlangapress.jpg" alt="Erlang and Elixir for Imperative Programmers" height="258px" width="181px"/>
+                <div class="mdl-cell mdl-cell--3-col" style="padding-left: 12px;padding-top: 7px;">
+                    <img src="res/erlangapress.jpg" alt="Erlang and Elixir for Imperative Programmers" height="196px" width="137px"/>
                 </div>
-                <div class="mdl-cell mdl-cell--8-col" style="padding-left: 10px;">
+                <div class="mdl-cell mdl-cell--9-col" style="padding-left: 10px;">
                     <div class="mdl-card__title-text">Available now !</div>
                     <div class="mdl-card__supporting-text">
                         <p>This book gives you an overview of Elixir and its parent language Erlang. It also explains concepts that underpin these languages like <i>Higher Order Functions, Recursion, Actor Model</i> and others.</p>
-                        <p>Get the book <a href="http://www.apress.com/gp/search?query=Wolfgang+Loder">here</a> !</p>
+                        <p>Get the book <a target="_blank" href="http://www.apress.com/gp/search?query=Wolfgang+Loder">HERE</a> !</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="mdl-cell mdl-cell--6-col mdl-shadow--2dp" style="background-color: whitesmoke">
             <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--4-col">
-                    <img src="res/elmapress.jpg" alt="Web Applications with Elm" height="258px" width="185px"/>
+                <div class="mdl-cell mdl-cell--3-col" style="padding-left: 12px;padding-top: 7px;">
+                    <img src="res/elmapress.jpg" alt="Web Applications with Elm" height="196px" width="137px"/>
                 </div>
-                <div class="mdl-cell mdl-cell--8-col" style="padding-left: 10px;">
+                <div class="mdl-cell mdl-cell--9-col" style="padding-left: 20px;">
                   <div class="mdl-card__title-text">Available Summer 2017 !</div>
                   <div class="mdl-card__supporting-text">
                     <p>Elm is a functional language for web applications. This book leads you from installation to application development and integration with JavaScript frameworks.</p>
-                    <p>You can see sample chapters <a href="https://github.com/kujua/webapplications-with-elm-beta-access">here</a>.</p>
-                    <p>More info about the book <a href="http://www.apress.com/gp/search?query=Wolfgang+Loder">here</a> !</p>
+                    <p>You can see sample chapters <a target="_blank" href="https://github.com/kujua/webapplications-with-elm-beta-access">HERE</a>.</p>
+                    <!--<p>More info about the book <a target="_blank" href="http://www.apress.com/gp/search?query=Wolfgang+Loder">here</a> !</p>-->
                   </div>
                 </div>
             </div>
         </div>
-
+        <div class="mdl-cell mdl-cell--12-col mdl-shadow--2dp" style="background-color: whitesmoke">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--5-col" style="padding-left: 10px;padding-top: 7px;">
+                    <div class="mdl-card__title-text">Masterclass Elm - Available soon!</div>
+                    <div class="mdl-card__supporting-text">
+                        <p>This masterclass consists of 4 courses with 50 hours video, quizzes, exercises and fully coded examples. It brings you from installing the Elm platform to developing professional applications.</p>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col" style="padding-left: 12px;padding-top: 7px;">
+                    <img src="res/Elm-Masterclass.jpg" alt="Web Applications with Elm" height="150" width="268"/>
+                </div>
+                <div class="mdl-cell mdl-cell--4-col" style="padding-left: 10px;">
+                    <div class="mdl-card__supporting-text">
+                        <p> The masterclass also explains with many code examples funcional concepts that Elm is based on and gives you a theoretical underpinning.</p>
+                        <p>More info <a target="_blank" href="https://kujua-hub.thinkific.com">HERE</a> !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         
+        
+            
         
             
         
@@ -101,7 +129,7 @@
         
             
                 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-                    <div class="mdl-card__title" >
+                    <div class="mdl-card__title"  style="background: url('/res/blog-self-publishing-card.jpg') center/cover;" >
 
                     </div>
                     <div><h2 class="mdl-card__title-text">Self-Publishing vs Traditional Publishing</h2></div>
@@ -143,7 +171,7 @@
                     <div><h2 class="mdl-card__title-text">Publishing a book on Leanpub</h2></div>
                     <div class="mdl-card__supporting-text">
                         <span>Sep 1, 2016</span>
-                        <p><p><strong>A few days ago I published my first book on Leanpub. Overall, it was a very good experience with no major problems.</strong></p>
+                        <p><p><strong>In August 2016 I published my first book on Leanpub. Overall, it was a very good experience with no major problems.</strong></p>
 
 </p>
                     </div>
@@ -175,7 +203,7 @@
         
             
                 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-                    <div class="mdl-card__title" >
+                    <div class="mdl-card__title"  style="background: url('/res/blog-win-10-card.jpg') center/cover;" >
 
                     </div>
                     <div><h2 class="mdl-card__title-text">Windows 10 - First Impressions</h2></div>
@@ -211,7 +239,7 @@
         
             
                 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-                    <div class="mdl-card__title" >
+                    <div class="mdl-card__title"  style="background: url('/res/blog-akka-card.jpg') center/cover;" >
 
                     </div>
                     <div><h2 class="mdl-card__title-text">Akka.net Experiences</h2></div>
@@ -247,7 +275,7 @@
         
             
                 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-                    <div class="mdl-card__title" >
+                    <div class="mdl-card__title"  style="background: url('/res/blog-web-future-card.jpg') center/cover;" >
 
                     </div>
                     <div><h2 class="mdl-card__title-text">The Future of Web Applications</h2></div>
@@ -283,7 +311,7 @@
         
             
                 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-                    <div class="mdl-card__title" >
+                    <div class="mdl-card__title"  style="background: url('/res/blog-agile-card.jpg') center/cover;" >
 
                     </div>
                     <div><h2 class="mdl-card__title-text">Agile Development</h2></div>
@@ -355,7 +383,7 @@
         
             
                 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-                    <div class="mdl-card__title" >
+                    <div class="mdl-card__title"  style="background: url('/res/blog-technical-debt-card.jpg') center/cover;" >
 
                     </div>
                     <div><h2 class="mdl-card__title-text">Technical Debt</h2></div>
@@ -391,7 +419,7 @@
         
             
                 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-                    <div class="mdl-card__title" >
+                    <div class="mdl-card__title"  style="background: url('/res/blog-why-card.jpg') center/cover;" >
 
                     </div>
                     <div><h2 class="mdl-card__title-text">Why a technical blog?</h2></div>
@@ -483,8 +511,7 @@
 
     <div class="mdl-mega-footer--bottom-section">
         <ul class="mdl-mega-footer--link-list">
-            <li><a href="http://kujuahub.com" target="_blank">Impressum</a></li>
-            <li><a href="http://kujuahub.com" target="_blank">Privacy & Terms</a></li>
+            <li><a href="https://kujuahub.com/#/privacy" target="_blank">Privacy & Impressum</a></li>
         </ul>
     </div>
 
