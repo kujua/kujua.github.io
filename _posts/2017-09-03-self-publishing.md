@@ -2,8 +2,8 @@
 layout: post
 title: Self-Publishing vs Traditional Publishing
 sortorder: 4066
-date: 2016-09-03
-updated: Dec 26 2016
+date: 2017-09-03
+updated: Jul 10 2018
 photo-front-url: /res/blog-self-publishing-card.jpg
 photo-front-class: grid-image-wrapper-square
 ignoredate: 0
@@ -40,4 +40,6 @@ For me it is a clear decision: go with a traditional publisher, get potentially 
 
 Traditional publishers will do editing, formatting and proof reading. On the other side, they will also influence the contents as they see fit with the author having no real control over it once a contract is signed. If the "additional exposure" is more worth than the vastly reduced royalties is a question authors must answer for themselves. Self-publishing also means self-marketing and not everyone is happy with that. I have seen that being present in social media all the time and pitching my own book is necessary to get readers. Stopping for a few days also stops sales. If someone does not like that, self-publishing is not the right approach.
 
-I have made up my mind and will continue self-publishing. Learning from the writing process of my first book I will sort out the editing and formatting problems and will also engage readers and potential readers more. I hope it will be successful and bring the quality of self-publishing technical books forward.
+I think I will continue self-publishing. Learning from the writing process of my first book I will sort out the editing and formatting problems and will also engage readers and potential readers more. I hope it will be successful and bring the quality of self-publishing technical books forward.
+
+Edit July 2018: And it comes different than one thinks. In the meantime the second book for the publisher is finished and more may come...
